@@ -124,5 +124,94 @@ padding-right: 2px;
 margin-right: 4px;
 }
 
-
-
+sum((
+if( {Glass clean}  ="excellent", 5,
+if( {Glass clean}  ="very good", 4,
+if( {Glass clean}  ="good", 3,
+if( {Glass clean}  ="weak", 1, 0))))
+),
+(
+if( {Outside light}  ="excellent", 5,
+if( {Outside light}  ="very good", 4,
+if( {Outside light}  ="good", 3,
+if( {Outside light}  ="weak", 1, 0))))
+),
+(
+if( {Floor}  ="excellent", 5,
+if( {Floor}  ="very good", 4,
+if( {Floor}  ="good", 3,
+if( {Floor}  ="weak", 1, 0))))
+),
+(
+if( {Surface}  ="excellent", 5,
+if( {Surface}  ="very good", 4,
+if( {Surface}  ="good", 3,
+if( {Surface}  ="weak", 1, 0))))
+),
+(
+if( {Internal light}  ="excellent", 5,
+if( {Internal light}  ="very good", 4,
+if( {Internal light}  ="good", 3,
+if( {Internal light}  ="weak", 1, 0))))
+),
+(
+if( {Kitchen Doors}  ="excellent", 5,
+if( {Kitchen Doors}  ="very good", 4,
+if( {Kitchen Doors}  ="good", 3,
+if( {Kitchen Doors}  ="weak", 1, 0))))
+),
+(
+if( {Cabinets}  ="excellent", 5,
+if( {Cabinets}  ="very good", 4,
+if( {Cabinets}  ="good", 3,
+if( {Cabinets}  ="weak", 1, 0))))
+),
+(
+if( {Offices}  ="excellent", 5,
+if( {Offices}  ="very good", 4,
+if( {Offices}  ="good", 3,
+if( {Offices}  ="weak", 1, 0))))
+),
+(
+if( {salesmen look}  ="excellent", 5,
+if( {salesmen look}  ="very good", 4,
+if( {salesmen look}  ="good", 3,
+if( {salesmen look}  ="weak", 1, 0))))
+),
+(
+if( {Marble Samples}  ="Available", 5,0)
+),
+(
+if( {Wood Samples}  ="Available", 5,0)
+),
+(
+if( {Aluminum Samples}  ="Available", 5,0)
+),
+(
+if( {Other Samples}  ="Available", 5,0)
+),
+(
+if( {Light cables}  ="excellent", 5,
+if( {Light cables}  ="very good", 4,
+if( {Light cables}  ="good", 3,
+if( {Light cables}  ="weak", 1, 0))))
+),
+(
+if( {salesmen attendance}  ="on time", 5,
+if( {salesmen attendance}  ="10-15 minutes late", 4,
+if( {salesmen attendance}  ="20-30 minutes late", 3,
+if( {salesmen attendance}  ="more late", 1, 0))))
+),
+(
+if( {Marble check}  ="excellent", 5,
+if( {Marble check}  ="very good", 4,
+if( {Marble check}  ="good", 3,
+if( {Marble check}  ="weak", 1, 0))))
+),
+(
+if( {Accessories}  ="excellent", 5,
+if( {Accessories}  ="very good", 4,
+if( {Accessories}  ="good", 3,
+if( {Accessories}  ="weak", 1, 0))))
+)
+)

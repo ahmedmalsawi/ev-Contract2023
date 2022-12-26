@@ -1,5 +1,10 @@
 /** @format */
-
+ $(function () {
+		$(".dropdown-menu li a").click(function () {
+			$(".btn:first-child").text($(this).text());
+			$(".btn:first-child").val($(this).text());
+		});
+ });
 function taxing() {
 	let tax = document.getElementById("tax");
 	let totalNoTax = document.getElementById("totalNoTax");
@@ -92,3 +97,4 @@ function start()
     .then((res) => console.log(JSON.stringify(res, null, 4)));
 	
 };
+
