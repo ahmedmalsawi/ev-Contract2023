@@ -5,14 +5,46 @@
 			$(".btn:first-child").val($(this).text());
 		});
  });
+ 
+ function meter(){
+   let heghitCount = document.getElementById("height");
+   let widthCount = document.getElementById("width");
+   let sMeterCalc = document.getElementById("sMeter");
+   
+   sMeterCalc.value = Math.round(heghitCount.value * widthCount.value * 100) / 100;
+   cabType();
+  };
+  
+  function cabType(){
+    let meterPrice = document.getElementById("meterPrice");
+    let cabType = document.getElementById("cabType");
+    let sMeterCalc = document.getElementById("sMeter");
+    let totalNoTax = document.getElementById("totalNoTax");
+    let price = 0;
+    if (cabType.value === "خزنة مفتوحة بدون أبواب")
+    {
+        price = 945;
+      // meterPrice.value = Math.round(sMeterCalc.value * 945 * 100) / 100;
+    } else if (cabType.value === "خزنة باب سحب خشب") {
+			price = 1240;
+		} else if (cabType.value === "خزنة باب سحب زجاج") {
+			price = 1670;
+		} else if (cabType.value === "خزنة مفصلية باب خشب") {
+			price = 1370;
+		} else if (cabType.value === "خزنة مفصلية باب زجاج") {
+			price = 1950;
+		} else {
+			meterPrice.value = 0;
+		}
+		
+    meterPrice.value = price;
+      totalNoTax.value = Math.round(sMeterCalc.value * price * 100) / 100;
+ taxing();
+};
 function taxing() {
-	let tax = document.getElementById("tax");
 	let totalNoTax = document.getElementById("totalNoTax");
-	let totalTaxed = document.getElementById("total-taxed");
+	let totalTaxed = document.getElementById("totalTaxed");
 
-	// tax.value = totalNoTax.value*0.15;
-	// totalTaxed.value = totalNoTax.value * 1.15;
-	tax.value = Math.round(totalNoTax.value * 0.15 * 100) / 100;
 	totalTaxed.value = Math.round(totalNoTax.value * 1.15 * 100) / 100;
 }
 

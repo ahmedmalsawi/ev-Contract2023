@@ -36,7 +36,6 @@
     </div>
   <div
         class="all-site container mt-0 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
-    <!-- <form action="" class="px-4 py-3"> -->
         <div
             class="all-site container-lg mainData col border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10">
             <div class="container mainData-01 row m-2 ">
@@ -50,29 +49,15 @@
                         placeholder="Ex: 9668001111414" autocomplete >
                     <label for="customerPhone">رقم الجوال</label>
                 </div>
-                <div class="email col-md col-sm col form-floating placeholder:text-center">
-                    <input type="email" class="form-control" id="email" value=""
-                        placeholder="Ex: test@test.test" autocomplete >
-                    <label for="email">البريد الالكتروني</label>
-                </div>
+
+
             </div>
             <div class="container mainData-02 row m-2">
-                <div class="city col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="city" value="" placeholder="Ex: الرياض"
-                        autocomplete >
-                    <label for="city">المدينة </label>
-                </div>
+
                 <div class="salesman col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="salesman" value=""
-                        placeholder="Ex: عصام سلامة" autocomplete >
+                    <input type="text" class="form-control " id="salesman" value="" placeholder="Ex: عصام سلامة" autocomplete>
                     <label for="salesman">المصمم</label>
                 </div>
-                <!-- <div class="showroom col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="showroom" value=""
-                    placeholder="Ex: 2- الامام سعود" autocomplete >
-                    <label for="showroom">المعرض</label>
-                </div> -->
-                
                 <div class="showroom col-md col-sm col form-floating placeholder:text-center">
                     <select class="form-select" id="showroom" aria-label="Floating label select example">
                         <option selected>يرجي اختيار المعرض</option>
@@ -93,39 +78,68 @@
                     <label for="showroom">المعرض</label>
                 </div>
                 
-
+            </div>
+            <div class="container mainData-03 row m-2 col-12">
+                
+                <!-- <div class="conrtactType col-md col-sm  col-6 form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="conrtactType" value="" placeholder="Ex: "
+                    onkeyup="meter();">
+                    <label for="conrtactType"> نوع الخزانة </label>
+                </div> -->
+                
+                <div class="cabType col-md col-sm col form-floating placeholder:text-center">
+                    <select class="form-select" id="cabType" aria-label="Floating label select example" onchange="cabType();" onkeyup="cabType();">
+                        <option selected disabled class="text-bg-dark text-danger">اختر نوع الخزانة</option>
+                        <option onclick="cabType();" value="خزنة مفتوحة بدون أبواب"> مفتوحة بدون أبواب-945</option>
+                        <option value="خزنة باب سحب خشب"> باب سحب خشب-1240</option>
+                        <option value="خزنة باب سحب زجاج"> باب سحب زجاج-1670</option>
+                        <option value="خزنة مفصلية باب خشب"> مفصلية باب خشب-1370</option>
+                        <option value="خزنة مفصلية باب زجاج"> مفصلية باب زجاج-1950</option>
+                    </select>
+                    <label for="cabType">نوع الخزانة</label>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="width col-md col-sm col-3 form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="width" value="" onkeyup="meter();"
+                        placeholder="Ex:" >
+                    <label for="width">عرض</label>
+                </div>
+                <div class="height col-md col-sm col-3 form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="height" value="" onkeyup="meter();"
+                        placeholder="Ex: " >
+                    <label for="height">ارتفاع</label>
+                </div>
+                <div class="sMeter col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="sMeter" value="" placeholder="Ex: "
+                        disabled>
+                    <label for="sMeter">المتر المربع</label>
+                </div>
             </div>
             <div class="container mainData-03 row m-2">
-                <div class="workDays col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="workDays" value="" placeholder="Ex: 90"
-                        autocomplete>
-                    <label for="workDays">مدة العقد </label>
-                </div>
-                <div class="conrtactType col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="conrtactType" value="" placeholder="Ex: مطبخ"
-                        autocomplete>
-                    <label for="conrtactType"> موضوع العقد </label>
+                <div class="meterPrice col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="meterPrice" value="" placeholder="Ex: "
+                        disabled>
+                    <label for="meterPrice">سعر المتر</label>
                 </div>
                 <div class="totalNoTax col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="totalNoTax" value="" onkeyup="taxing();"
-                        placeholder="Ex: 75350.54" autocomplete>
-                    <label for="totalNoTax">قيمة العقد (قبل الضريبة) </label>
-                </div>
-            </div>
-            <div class="container mainData-03 row m-2">
-                <div class="tax col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="tax" value="" placeholder="Ex: 90"
+                    <input type="number" class="form-control " id="totalNoTax" value="" placeholder="Ex: "
                         disabled>
-                    <label for="tax">الضريبة</label>
+                    <label for="totalNoTax">القيمة (قبل الضريبة) </label>
                 </div>
-                <div class="total-taxed col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="total-taxed" value="" placeholder="Ex: "
+                <div class="totalTaxed col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="totalTaxed" value="" placeholder="Ex: "
                         disabled>
-                    <label for="total-taxed"> القيمة شاملة الضريبة </label>
+                    <label for="totalTaxed"> القيمة (شاملة الضريبة) </label>
                 </div>
             </div>
         </div>
-
+<div class="hide">
         <div class="all-site container-lg cabinet  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container cabinet-01 row m-2 ">
                 <div class="cabinetType col-md col-sm col form-floating ">
