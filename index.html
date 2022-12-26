@@ -33,40 +33,40 @@
     </div>
   <div
         class="all-site container-lg  border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
-    <form action="" method="POST" class="px-4 py-3">
+    <!-- <form action="" class="px-4 py-3"> -->
         <div
             class="all-site container-lg mainData col border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10">
             <div class="container mainData-01 row m-2 ">
                 <div class="customerName col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="customer" value=""
-                        placeholder="Ex: محمود ابراهيم عبد الباقي" autocomplete required>
-                    <label for="customer">اسم العميل</label>
+                    <input type="text" class="form-control" id="customerName" value=""
+                        placeholder="Ex: محمود ابراهيم عبد الباقي" autocomplete >
+                    <label for="customerName">اسم العميل</label>
                 </div>
                 <div class="customerPhone col-md col-sm col form-floating placeholder:text-center">
-                    <input type="phone" class="form-control" id="phone" value=""
-                        placeholder="Ex: 9668001111414" autocomplete required>
-                    <label for="phone">رقم الجوال</label>
+                    <input type="customerPhone" class="form-control" id="customerPhone" value=""
+                        placeholder="Ex: 9668001111414" autocomplete >
+                    <label for="customerPhone">رقم الجوال</label>
                 </div>
                 <div class="email col-md col-sm col form-floating placeholder:text-center">
                     <input type="email" class="form-control" id="email" value=""
-                        placeholder="Ex: test@test.test" autocomplete required>
+                        placeholder="Ex: test@test.test" autocomplete >
                     <label for="email">البريد الالكتروني</label>
                 </div>
             </div>
             <div class="container mainData-02 row m-2">
                 <div class="city col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control " id="city" value="" placeholder="Ex: الرياض"
-                        autocomplete required>
+                        autocomplete >
                     <label for="city">المدينة </label>
                 </div>
                 <div class="salesman col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control " id="salesman" value=""
-                        placeholder="Ex: عصام سلامة" autocomplete required>
+                        placeholder="Ex: عصام سلامة" autocomplete >
                     <label for="salesman">المصمم</label>
                 </div>
                 <div class="showroom col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control " id="showroom" value=""
-                        placeholder="Ex: 2- الامام سعود" autocomplete required>
+                        placeholder="Ex: 2- الامام سعود" autocomplete >
                     <label for="showroom">المعرض</label>
                 </div>
             </div>
@@ -81,10 +81,10 @@
                         autocomplete>
                     <label for="conrtactType"> موضوع العقد </label>
                 </div>
-                <div class="total-no-tax col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="total-no-tax" value="" onkeyup="taxing();"
+                <div class="totalNoTax col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="totalNoTax" value="" onkeyup="taxing();"
                         placeholder="Ex: 75350.54" autocomplete>
-                    <label for="total-no-tax">قيمة العقد (قبل الضريبة) </label>
+                    <label for="totalNoTax">قيمة العقد (قبل الضريبة) </label>
                 </div>
             </div>
             <div class="container mainData-03 row m-2">
@@ -103,32 +103,32 @@
 
         <div class="all-site container-lg cabinet  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container cabinet-01 row m-2 ">
-                <div class="cabinet-type col-md col-sm col form-floating ">
-                    <input type="text" class="form-control float-right" id="cabinet-type" value=""
-                        placeholder="Ex: " autocomplete required>
-                    <label for="cabinet-type" class="float-right">نوع الكابينة </label>
-                </div>
-                <div class="handel-code col-md col-sm col form-floating  placeholder:text-center">
-                    <input type="text" class="form-control float-right" id="handel-code" value=""
+                <div class="cabinetType col-md col-sm col form-floating ">
+                    <input type="text" class="form-control float-right" id="cabinetType" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="handel-code">نوع / كود المسكة</label>
+                    <label for="cabinetType" class="float-right">نوع الكابينة </label>
                 </div>
-                <div class="handel-count col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control" id="handel-count" value=""
+                <div class="handelCode col-md col-sm col form-floating  placeholder:text-center">
+                    <input type="text" class="form-control float-right" id="handelCode" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="handelCode">نوع / كود المسكة</label>
+                </div>
+                <div class="handelCount col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control" id="handelCount" value=""
                         placeholder="Ex: 20" autocomplete >
-                    <label for="handel-count">عدد المسكات </label>
+                    <label for="handelCount">عدد المسكات </label>
                 </div>
             </div>
             <div class="container cabinet-02 row m-2">
-                <div class="door-type col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="door-type" value="" placeholder="Ex: "
+                <div class="doorType col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="doorType" value="" placeholder="Ex: "
                         autocomplete>
-                    <label for="door-type">نوع الدرفة </label>
+                    <label for="doorType">نوع الدرفة </label>
                 </div>
-                <div class="door-code col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="door-code" value=""
+                <div class="doorCode col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="doorCode" value=""
                         placeholder="Ex: " autocomplete>
-                    <label for="door-code">موديل الدرفة</label>
+                    <label for="doorCode">موديل الدرفة</label>
                 </div>
                 <div class="door-color col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control " id="door-color" value=""
@@ -137,155 +137,155 @@
                 </div>
             </div>
             <div class="container cabinet-03 row m-2">
-                <div class="cabinet-add col-md col-sm col form-floating placeholder:text-center">
-                    <textarea class="form-control " id="cabinet-add" value="" placeholder="Ex: 90"
+                <div class="cabinetAdd col-md col-sm col form-floating placeholder:text-center">
+                    <textarea class="form-control " id="cabinetAdd" value="" placeholder="Ex: 90"
                         autocomplete></textarea>
-                    <label for="cabinet-add">معلومات اضافية عن الكابينة والدرفة </label>
+                    <label for="cabinetAdd">معلومات اضافية عن الكابينة والدرفة </label>
                 </div>
               </div>
         </div>
 
          <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container mainData-01 row m-2 ">
-                <div class="shelf-01 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="shelf-01" value=""
+                <div class="shelf01 col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="shelf01" value=""
                         placeholder="Ex:    " autocomplete >
-                    <label for="shelf-01">أرفف إضافية </label>
+                    <label for="shelf01">أرفف إضافية </label>
                 </div>
                 <div class="nala col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control" id="nala" value=""
                         placeholder="Ex: " autocomplete >
                     <label for="nala">نعلة رخام / خشب </label>
                 </div>
-                <div class="nala-paint col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="nala-paint" value=""
+                <div class="nalaPaint col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="nalaPaint" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="nala-paint">طلاء النعلة </label>
+                    <label for="nalaPaint">طلاء النعلة </label>
                 </div>
             </div>
               <div class="container cabinet-03 row m-2">
-                <div class="door-add-name  col-3 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="door-add-name" value="" placeholder="Ex: "
+                <div class="doorAddName  col-3 form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="doorAddName" value="" placeholder="Ex: "
                         autocomplete>
-                    <label for="door-add-name"> اضافة  اخري  </label>
+                    <label for="doorAddName"> اضافة  اخري  </label>
                 </div>
-                <div class="door-add-value col-md  col-sm-6 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="door-add-value" value="" placeholder="Ex: "
+                <div class="doorAddValue col-md  col-sm-6 form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="doorAddValue" value="" placeholder="Ex: "
                         autocomplete>
-                    <label for="door-add-value"> البيان </label>
+                    <label for="doorAddValue"> البيان </label>
               </div>
             </div>
         </div>
 
          <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container mainData-01 row m-2 ">
-                <div class="georgian-bar col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="georgian-bar" value=""
+                <div class="georgianBar col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="georgianBar" value=""
                         placeholder="Ex:" autocomplete >
-                    <label for="georgian-bar">جورجيان بار </label>
+                    <label for="georgianBar">جورجيان بار </label>
                 </div>
                 <div class="glass col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control" id="glass" value=""
                         placeholder="Ex: " autocomplete >
                     <label for="glass"> درف زجاج / أكريلك  </label>
                 </div>
-                <div class="door-open col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="door-open" value=""
+                <div class="doorOpen col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="doorOpen" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="door-open"> فتح الدرفة </label>
+                    <label for="doorOpen"> فتح الدرفة </label>
                 </div>
             </div>
               <div class="container cabinet-03 row m-2">
-                <div class="glass-addon-name  col-3 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="glass-addon-name" value="" placeholder="Ex: "
+                <div class="glassAddonName  col-3 form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="glassAddonName" value="" placeholder="Ex: "
                         autocomplete>
-                    <label for="glass-addon-name"> اضافة  اخري  </label>
+                    <label for="glassAddonName"> اضافة  اخري  </label>
                 </div>
-                <div class="glass-addon-value col-md  col-sm-6 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="glass-addon-value" value="" placeholder="Ex: "
+                <div class="glassAddonValue col-md  col-sm-6 form-floating placeholder:text-center">
+                    <input type="text" class="form-control " id="glassAddonValue" value="" placeholder="Ex: "
                         autocomplete>
-                    <label for="glass-addon-value"> البيان </label>
+                    <label for="glassAddonValue"> البيان </label>
               </div>
             </div>
         </div>
 
         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container mainData-01 row m-2 ">
-                <div class="surface-type col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="surface-type" value=""
-                        placeholder="Ex: " autocomplete required>
-                    <label for="surface-type">نوع السطح  </label>
+                <div class="surfaceType col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="surfaceType" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="surfaceType">نوع السطح  </label>
                 </div>
-                <div class="surface-code col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="surface-code" value=""
-                        placeholder="Ex: 9668001111414" autocomplete required>
-                    <label for="surface-code">  كود السطح </label>
+                <div class="surfaceCode col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="surfaceCode" value=""
+                        placeholder="Ex: 9668001111414" autocomplete >
+                    <label for="surfaceCode">  كود السطح </label>
                 </div>
-                <div class="sink-type col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="sink-type" value=""
-                        placeholder="Ex: " autocomplete required>
-                    <label for="sink-type"> نوع المجلي  </label>
+                <div class="sinkType col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="sinkType" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="sinkType"> نوع المجلي  </label>
                 </div>
             </div>
             <div class="container cabinet-03 row m-2">
-                <div class="surace-extra col-md col-sm col form-floating placeholder:text-center">
-                    <textarea class="form-control " id="surace-extra" value="" placeholder="Ex: "
+                <div class="surfaceExtra col-md col-sm col form-floating placeholder:text-center">
+                    <textarea class="form-control " id="surfaceExtra" value="" placeholder="Ex: "
                         autocomplete></textarea>
-                    <label for="surace-extra">معلومات اضافية عن السطح   </label>
+                    <label for="surfaceExtra">معلومات اضافية عن السطح   </label>
                 </div>
               </div>
         </div>
 
         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container mainData-01 row m-2 ">
-                <div class="wall-cover col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="wall-cover" value=""
+                <div class="wallCover col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="wallCover" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="wall-cover"> تكسيات جدارية </label>
+                    <label for="wallCover"> تكسيات جدارية </label>
                 </div>
-                <div class="upper-cor col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="upper-cor" value=""
+                <div class="upperCor col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="upperCor" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="upper-cor"> كورنيش علوي </label>
+                    <label for="upperCor"> كورنيش علوي </label>
                 </div>
-                <div class="lower-cor col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="lower-cor" value=""
+                <div class="lowerCor col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="lowerCor" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="lower-cor"> كورنيش سفلي </label>
+                    <label for="lowerCor"> كورنيش سفلي </label>
                 </div>
             </div>
             <div class="container mainData-01 row m-2 ">
-                <div class="shelf-hanged col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="shelf-hanged" value=""
+                <div class="shelfHanged col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="shelfHanged" value=""
                         placeholder="Ex:" autocomplete >
-                    <label for="shelf-hanged"> أرفف معلقة </label>
+                    <label for="shelfHanged"> أرفف معلقة </label>
                 </div>
                 <div class="light col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control" id="light" value=""
                         placeholder="Ex: " autocomplete >
                     <label for="light"> إنارة </label>
                 </div>
-                <div class="cabinet-open col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="cabinet-open" value=""
+                <div class="cabinetOpen col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="cabinetOpen" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="cabinet-open"> كبائن مفتوحة </label>
+                    <label for="cabinetOpen"> كبائن مفتوحة </label>
                 </div>
             </div>
             <div class="container mainData-01 row m-2 ">
-                <div class="drawer-small col-md col-sm col form-floating ">
-                    <input type="number" class="form-control" id="drawer-small" value=""
+                <div class="drawerSmall col-md col-sm col form-floating ">
+                    <input type="number" class="form-control" id="drawerSmall" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="drawer-small"> درج هيدروليك صغير </label>
+                    <label for="drawerSmall"> درج هيدروليك صغير </label>
                 </div>
-                <div class="drawer-med col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control" id="drawer-med" value=""
+                <div class="drawerMed col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control" id="drawerMed" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="drawer-med">  درج هيدروليك وسط </label>
+                    <label for="drawerMed">  درج هيدروليك وسط </label>
                 </div>
-                <div class="drawer-lar col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control" id="drawer-lar" value=""
+                <div class="drawerLar col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control" id="drawerLar" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="drawer-lar"> درج هيدروليك كبير </label>
+                    <label for="drawerLar"> درج هيدروليك كبير </label>
                 </div>
             </div>
             <div class="container mainData-01 row m-2 ">
@@ -309,19 +309,20 @@
 
         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container cabinet-03 row m-2">
-                <div class="factory-instructions col-md col-sm col form-floating placeholder:text-center">
-                    <textarea class="form-control" id="factory-instructions" value="" placeholder="Ex: "
+                <div class="factoryInstructions col-md col-sm col form-floating placeholder:text-center">
+                    <textarea class="form-control" id="factoryInstructions" value="" placeholder="Ex: "
                     autocomplete></textarea>
-                    <label for="factory-instructions">معلومات أخري للمصنع     </label>
+                    <label for="factoryInstructions">معلومات أخري للمصنع     </label>
                 </div>
               </div>
         </div>
 
         <div class="row w-full">
-          <button type="submit" class="btn btn-primary align-center text-center mr-2">ارسال الي مونداي</button>
+        <button type="submit" onclick="start()">Submit</button>
+          <button type="submit" class="btn btn-primary align-center text-center mr-2" onclick="start();">ارسال الي مونداي</button>
         </div>
         </div>
-      </form>
+      <!-- </form> -->
     </div>
 
     <script src="script.js"></script>
