@@ -123,3 +123,13 @@ right: 0;
 padding-right: 2px;
 margin-right: 4px;
 }
+
+.sendToMonday {
+  transition: 0.3s;
+}
+
+.sendToMonday:hover {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}

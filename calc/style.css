@@ -123,3 +123,21 @@ right: 0;
 padding-right: 2px;
 margin-right: 4px;
 }
+
+.totalTaxedInput{
+/* color: var(--primary3)!important; */
+/* background-color: var(--primary9) !important; */
+border: 1px solid black !important;
+}
+.totalTaxedInput::after {
+content: "ريال سعودي" !important;
+color: #BD2939;
+z-index: 1;
+/* left:0; */
+/* text-align: center; */
+}
+
+/* .totalTaxedInput{
+  color: var(--bs-red);
+} */
+

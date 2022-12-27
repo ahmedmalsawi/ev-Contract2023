@@ -28,18 +28,18 @@
 
 <body>
 
-    <div class="container-lg all-site">
-        <div class="container header text-center w-50 pb-0 mb-0 m-0 rounded-5 mx-auto">
+    <div class="container-xxl all-site">
+        <div class="container-xxl header text-center w-50 pb-0 mb-0 m-0 rounded-5 mx-auto">
             <h3 class="fs-5 text-red-600">فنون حواء للمطابخ</h3>
             <p id="head" class="head fs-7 w-100 text-center font-bold"> حاسبة الخزائن</p>
         </div>
     </div>
   <div
-        class="all-site container mt-0 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
+        class="all-site container-xxl mt-0 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
         <div
-            class="all-site container-lg mainData col border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10">
+            class="all-site container-xxl mainData border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10">
             <div class="container mainData-01 row m-2 ">
-                <div class="customerName col-md col-sm col form-floating ">
+                <div class="customerName col-8 form-floating ">
                     <input type="text" class="form-control" id="customerName" value=""
                         placeholder="Ex: محمود ابراهيم عبد الباقي" autocomplete >
                     <label for="customerName">اسم العميل</label>
@@ -79,15 +79,9 @@
                 </div>
                 
             </div>
-            <div class="container mainData-03 row m-2 col-12">
+            <div class="container mainData-03 row m-2">
                 
-                <!-- <div class="conrtactType col-md col-sm  col-6 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="conrtactType" value="" placeholder="Ex: "
-                    onkeyup="meter();">
-                    <label for="conrtactType"> نوع الخزانة </label>
-                </div> -->
-                
-                <div class="cabType col-md col-sm col form-floating placeholder:text-center">
+                <div class="cabType col-6 form-floating placeholder:text-center">
                     <select class="form-select" id="cabType" aria-label="Floating label select example" onchange="cabType();" onkeyup="cabType();">
                         <option selected disabled class="text-bg-dark text-danger">اختر نوع الخزانة</option>
                         <option onclick="cabType();" value="خزنة مفتوحة بدون أبواب"> مفتوحة بدون أبواب-945</option>
@@ -105,12 +99,12 @@
                 
                 
                 
-                <div class="width col-md col-sm col-3 form-floating placeholder:text-center">
+                <div class="width col-1 form-floating placeholder:text-center">
                     <input type="number" class="form-control " id="width" value="" onkeyup="meter();"
                         placeholder="Ex:" >
                     <label for="width">عرض</label>
                 </div>
-                <div class="height col-md col-sm col-3 form-floating placeholder:text-center">
+                <div class="height col-1 form-floating placeholder:text-center">
                     <input type="number" class="form-control " id="height" value="" onkeyup="meter();"
                         placeholder="Ex: " >
                     <label for="height">ارتفاع</label>
@@ -133,7 +127,7 @@
                     <label for="totalNoTax">القيمة (قبل الضريبة) </label>
                 </div>
                 <div class="totalTaxed col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="totalTaxed" value="" placeholder="Ex: "
+                    <input type="text" class="form-control totalTaxedInput" id="totalTaxed" value="" placeholder="Ex: "
                         disabled>
                     <label for="totalTaxed"> القيمة (شاملة الضريبة) </label>
                 </div>
@@ -357,7 +351,7 @@
         </div>
 
         <div class="row ">
-          <button type="submit" class=" btn-succsess align-center text-center border-0 hover:text-red-600 " onclick="start();">ارسال الي مونداي</button>
+          <div type="submit" class=" btn-succsess align-center text-center border-0 hover:text-red-600 " onclick="start();">ارسال الي مونداي</div>
         </div>
         </div>
       <!-- </form> -->

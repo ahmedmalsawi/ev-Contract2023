@@ -238,18 +238,25 @@
             <div class="container mainData-01 row m-2 ">
                 <div class="surfaceType col-md col-sm col form-floating ">
                     <input type="text" class="form-control" id="surfaceType" value=""
-                        placeholder="Ex: " autocomplete >
+                    placeholder="Ex: " autocomplete >
                     <label for="surfaceType">نوع السطح  </label>
                 </div>
                 <div class="surfaceCode col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control" id="surfaceCode" value=""
-                        placeholder="Ex: 9668001111414" autocomplete >
+                        placeholder="Ex: " autocomplete >
                     <label for="surfaceCode">  كود السطح </label>
                 </div>
+                </div>
+                <div class="container mainData-01 row m-2 ">
                 <div class="sinkType col-md col-sm col form-floating placeholder:text-center">
                     <input type="text" class="form-control" id="sinkType" value=""
-                        placeholder="Ex: " autocomplete >
+                    placeholder="Ex: " autocomplete >
                     <label for="sinkType"> نوع المجلي  </label>
+                </div>
+                <div class="sinkCode col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="sinkCode" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="sinkCode">  كود المجلي </label>
                 </div>
             </div>
             <div class="container cabinet-03 row m-2">
@@ -258,8 +265,8 @@
                         autocomplete></textarea>
                     <label for="surfaceExtra">معلومات اضافية عن السطح   </label>
                 </div>
-              </div>
-        </div>
+            </div>
+            </div>
 
         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
             <div class="container mainData-01 row m-2 ">
@@ -314,21 +321,38 @@
                 </div>
             </div>
             <div class="container mainData-01 row m-2 ">
-                <div class="general-add-01 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="general-add-01" value=""
+                <div class="generalAddName01 col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="generalAddName01" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="general-add-01">إضافة أخري 1   </label>
-                </div>
-                <div class="general-add-02 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="general-add-02" value=""
+                        <label for="generalAddName01">إضافة أخري 1   </label>
+                    </div>
+                    <div class="generalAddName02 col-md col-sm col form-floating placeholder:text-center">
+                        <input type="text" class="form-control" id="generalAddName02" value=""
                         placeholder="Ex: " autocomplete >
-                    <label for="general-add-02">  إضافة أخري 2  </label>
-                </div>
-                <div class="general-add-03 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="general-add-03" value=""
+                        <label for="generalAddName02">  إضافة أخري 2  </label>
+                    </div>
+                    <div class="generalAddName03 col-md col-sm col form-floating placeholder:text-center">
+                        <input type="text" class="form-control" id="generalAddName03" value=""
                         placeholder="Ex: test@test.test" autocomplete >
-                    <label for="general-add-03"> إضافة أخري 3   </label>
+                        <label for="generalAddName03"> إضافة أخري 3   </label>
+                    </div>
                 </div>
+                    <div class="container mainData-01 row m-2 ">
+                        <div class="generalAddValue01 col-md col-sm col form-floating ">
+                            <input type="text" class="form-control" id="generalAddValue01" value=""
+                            placeholder="Ex: " autocomplete >
+                        <label for="generalAddValue01">قيمة إضافة أخري 1   </label>
+                    </div>
+                    <div class="generalAddValue02 col-md col-sm col form-floating placeholder:text-center">
+                        <input type="text" class="form-control" id="generalAddValue02" value=""
+                        placeholder="Ex: " autocomplete >
+                        <label for="generalAddValue02"> قيمة إضافة أخري 2  </label>
+                    </div>
+                    <div class="generalAddValue03 col-md col-sm col form-floating placeholder:text-center">
+                        <input type="text" class="form-control" id="generalAddValue03" value=""
+                        placeholder="Ex: test@test.test" autocomplete >
+                        <label for="generalAddValue03"> قيمة إضافة أخري 3   </label>
+                    </div>
             </div>
         </div>
 
@@ -343,8 +367,10 @@
         </div>
 
         <div class="row ">
-          <button type="submit" class=" btn-succsess align-center text-center border-0 hover:text-red-600 " onclick="start();">ارسال الي مونداي</button>
+        <!-- <a href="#"> -->
+            <div  class="sendToMonday p-2 text-danger btn-succsess align-center text-center border-0 hover:text-bg-danger " onclick="start();">ارسال الي مونداي</div>
         </div>
+    <!-- </a> -->
         </div>
       <!-- </form> -->
     </div>

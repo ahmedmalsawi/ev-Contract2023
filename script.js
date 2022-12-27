@@ -8,7 +8,7 @@
 function taxing() {
 	let tax = document.getElementById("tax");
 	let totalNoTax = document.getElementById("totalNoTax");
-	let totalTaxed = document.getElementById("total-taxed");
+	let totalTaxed = document.getElementById("totalTaxed");
 
 	// tax.value = totalNoTax.value*0.15;
 	// totalTaxed.value = totalNoTax.value * 1.15;
@@ -32,6 +32,7 @@ function start()
   let handelCount = document.getElementById("handelCount").value;
   let doorType = document.getElementById("doorType").value;
   let doorCode = document.getElementById("doorCode").value;
+  let doorColor = document.getElementById("doorColor").value;
   let cabinetAdd = document.getElementById("cabinetAdd").value;
   let shelf01 = document.getElementById("shelf01").value;
   let nala = document.getElementById("nala").value;
@@ -46,6 +47,7 @@ function start()
   let surfaceType = document.getElementById("surfaceType").value;
   let surfaceCode = document.getElementById("surfaceCode").value;
   let sinkType = document.getElementById("sinkType").value;
+  let sinkCode = document.getElementById("sinkCode").value;
   let surfaceExtra = document.getElementById("surfaceExtra").value;
   let wallCover = document.getElementById("wallCover").value;
   let upperCor = document.getElementById("upperCor").value;
@@ -59,23 +61,63 @@ function start()
   let factoryInstructions = document.getElementById(
 		"factoryInstructions"
 	).value;
-  let query5 = "mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:3560555809, item_name:$myItemName, column_values:$columnVals) { id } }";
-  // let monVars = {
-	// 	myItemName: "Sawi3",
-	// 	columnVals: JSON.stringify({
-	// 		status: { label: "Done" },
-	// 		status3: { val1 },
-	// 		date4: { date: "1993-08-27" },
-	// 		numbers: num,
-	// 	}),
+  
+  
+    let query5 = "mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:3560555809, item_name:$myItemName, column_values:$columnVals) { id } }";
 		let st = "Stuck";
 		let monVars = {
 			myItemName: customerName,
 			columnVals: JSON.stringify({
-				status: { label: st },
+				// status: { label: st },
+				// date4: { date: "1993-08-27" },
 				status3: { label: showroom },
-				date4: { date: "1993-08-27" },
 				numbers: totalNoTax,
+				text6: customerName,
+				text6: customerPhone,
+				text6: email,
+				text6: city,
+				status3: { label: salesman },
+				text6: workDays,
+				text6: totalNoTax,
+				status3: { label: conrtactType },
+				status3: { label: cabinetType },
+				status3: { label: doorType },
+				status3: { label: doorCode },
+				text6: doorColor,
+				text6: cabinetAdd,
+				text6: shelf01,
+				text6: georgianBar,
+				text6: nala,
+				text6: glass,
+				text6: nalaPaint,
+				status3: { label: doorOpen },
+				text6: handelCode,
+				text6: handelCount,
+				text6: doorAddName,
+				text6: doorAddValue,
+				text6: glassAddonName,
+				text6: glassAddonValue,
+				status3: { label: surfaceType },
+				text6: surfaceCode,
+				status3: { label: sinkType },
+				text6: sinkCode,
+				text6: surfaceExtra,
+				text6: wallCover,
+				text6: upperCor,
+				text6: lowerCor,
+				text6: shelfHanged,
+				text6: light,
+				text6: cabinetOpen,
+				text6: drawerSmall,
+				text6: drawerMed,
+				text6: drawerLar,
+				text6: generalAddName01,
+				text6: generalAddValue01,
+				text6: generalAddName02,
+				text6: generalAddValue02,
+				text6: generalAddName03,
+				text6: generalAddValue03,
+				text6: factoryInstructions
 			}),
 		};
 		
