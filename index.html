@@ -1,6 +1,6 @@
 <html lang="en" dir="rtl">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,453 +11,845 @@
     <link rel="apple-touch-icon" sizes="76x76" href="//fononhawwa.com/wp-content/uploads/2021/10/222222.png">
     <link rel="apple-touch-icon" sizes="152x152" href="//fononhawwa.com/wp-content/uploads/2021/10/222222.png">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"  rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"
-    crossorigin><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-    
-    
     <title>Ev-Page-Contract</title>
-</head>
+  </head>
 
-<body>
+  <body>
 
-    <div class="container-lg all-site">
-        <div class="container header text-center w-50 pb-0 mb-0 m-0 rounded-5 mx-auto">
-            <h3 class="fs-5 text-red-600">فنون حواء للمطابخ</h3>
-            <p id="head" class="head fs-7 w-100 text-center font-bold"> عقد المواصفات الفنية</p>
-        </div>
+    <div class="container-lg  ">
+      <div class="container header text-center w-50 pb-0 mb-0 m-0 rounded-5 mx-auto">
+        <h3 class="fs-5 text-red-600">فنون حواء للمطابخ</h3>
+        <p id="head" class="head fs-7 w-100 text-center font-bold"> عقد المواصفات الفنية</p>
+              <div class="row ">
+                <div class="titleButton dev-button devicesData hide p-2 text-danger btn-succsess align-center text-center border-0 hover:text-bg-danger "
+                  onclick="show();">عقد أجهزة (للتغيير اضغط هنا)</div>
+                <div class="titleButton section p-2 text-danger btn-succsess align-center text-center border-0 hover:text-bg-danger "
+                  onclick="show();">عقد فني (للتغيير اضغط هنا)</div>
+              </div>
+      </div>
     </div>
-  <div
-        class="all-site container mt-0 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
-    <!-- <form action="" class="px-4 py-3"> -->
-        <div
-            class="all-site container-lg mainData col border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10">
-            <div class="container mainData-01 row m-2 ">
-                <div class="customerName col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="customerName" value=""
-                        placeholder="Ex: محمود ابراهيم عبد الباقي" autocomplete >
-                    <label for="customerName">اسم العميل</label>
+        <div class="   container mb-2 mt-0 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
+      <!-- // General Data   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class=" container-lg mainData col border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10">
+      <!-- //Row 1   -->
+        <div class="container row1 row m-2 ">
+          <div class="customerName col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="customerName" value=""
+              placeholder="Ex: محمود ابراهيم عبد الباقي" autocomplete>
+            <label for="customerName">اسم العميل</label>
+          </div>
+          <div class="customerPhone col-md col-sm col form-floating placeholder:text-center">
+            <input type="customerPhone" class="form-control" id="customerPhone" value="" placeholder="Ex: 9668001111414"
+              autocomplete>
+            <label for="customerPhone">رقم الجوال</label>
+          </div>
+          <div class="email col-md col-sm col form-floating placeholder:text-center">
+            <input type="email" class="form-control" id="email" value="" placeholder="Ex: test@test.test" autocomplete>
+            <label for="email">البريد الالكتروني</label>
+          </div>
+        </div>
+      <!-- // Row 2   -->
+        <div class="container row2 row m-2">
+          <div class="city col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="city" value="" placeholder="Ex: الرياض" autocomplete>
+            <label for="city">المدينة </label>
+          </div>
+          <div class="salesman col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="salesman" value="" placeholder="Ex: عصام سلامة" autocomplete>
+            <label for="salesman">المصمم</label>
+          </div>
+          <div class="showroom col-md col-sm col form-floating placeholder:text-center">
+            <select class="form-select" id="showroom" aria-label="Floating label select example">
+              <option selected>يرجي اختيار المعرض</option>
+              <option value="" disabled class="text-bg-dark text-danger text-center">المنطقة الوسطي
+              </option>
+              <option value="0- المصنع">0- المصنع</option>
+              <option value="1- التخصصي">1- التخصصي</option>
+              <option value="2- الإمام سعود">2- الإمام سعود</option>
+              <option value="5- السيف جاليري">5- السيف جاليري</option>
+              <option value="6- الدوادمي">6- الدوادمي</option>
+              <option value="9- المجمعة">9- المجمعة</option>
+              <option value="" disabled class="text-bg-dark text-danger text-center"> منطقة القصيم
+              </option>
+              <option value="3- بريدة">3- بريدة</option>
+              <option value="7- الرس">7- الرس</option>
+              <option value="" disabled class="text-bg-dark text-danger text-center">المنطقة الشرقية
+              </option>
+              <option value="4- الخبر">4- الخبر</option>
+              <option value="8- الأحساء">8- الأحساء</option>
+              <option value="10- الدمام">10- الدمام</option>
+              <option value="" disabled class="text-bg-dark text-danger text-center">المنطقة الغربية
+              </option>
+              <option value="11- المدينة">11- المدينة</option>
+              <option value="12- جدة">12- جدة</option>
+            </select>
+            <label for="showroom">المعرض</label>
+          </div>
+        </div>
+      <!-- // Row 3 -->
+        <div class="container row3 row m-2">
+          <div class="workDays col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control " id="workDays" value="" placeholder="Ex: 90" autocomplete>
+            <label for="workDays">مدة العقد </label>
+          </div>
+          <div class="conrtactType col multiple form-floating placeholder:text-center">
+            <div class="row ">
+              <div class="col-md-8 col-lg-5 d-flex  align-items-center">
+                <div class="d-flex text-left align-items-center w-100">
+                  <label for="conrtactType" class="form-label select-label">موضوع العقد</label>
+                  <select id="multiple-checkboxes" multiple="multiple">
+                    <option value="" disabled class="text-bg-dark text-danger text-center">موضوع
+                      العقد</option>
+                    <option value="مطبخ">مطبخ</option>
+                    <option value="مطابخ">مطابخ</option>
+                    <option value="كاونتر">كاونتر</option>
+                    <option value="غرفة غسيل">غرفة غسيل</option>
+                    <option value="وحدة تلفزيون">وحدة تلفزيون</option>
+                    <option value="مستودع">مستودع</option>
+                    <option value="مغسلة">مغسلة</option>
+                    <option value="مغاسل">مغاسل</option>
+                    <option value="اكسسوارات">اكسسوارات</option>
+                    <option value="مجلى">مجلى</option>
+                    <option value="أجهزة">أجهزة</option>
+                    <option value="إضافة على عقد">إضافة على عقد</option>
+                    <option value="خزائن">خزائن</option>
+                  </select>
                 </div>
-                <div class="customerPhone col-md col-sm col form-floating placeholder:text-center">
-                    <input type="customerPhone" class="form-control" id="customerPhone" value=""
-                        placeholder="Ex: 9668001111414" autocomplete >
-                    <label for="customerPhone">رقم الجوال</label>
-                </div>
-                <div class="email col-md col-sm col form-floating placeholder:text-center">
-                    <input type="email" class="form-control" id="email" value=""
-                        placeholder="Ex: test@test.test" autocomplete >
-                    <label for="email">البريد الالكتروني</label>
-                </div>
+              </div>
             </div>
-            <div class="container mainData-02 row m-2">
-                <div class="city col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="city" value="" placeholder="Ex: الرياض"
-                        autocomplete >
-                    <label for="city">المدينة </label>
-                </div>
-                <div class="salesman col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="salesman" value=""
-                        placeholder="Ex: عصام سلامة" autocomplete >
-                    <label for="salesman">المصمم</label>
-                </div>
-                <div class="showroom col-md col-sm col form-floating placeholder:text-center">
-                    <select class="form-select" id="showroom" aria-label="Floating label select example">
-                        <option selected>يرجي اختيار المعرض</option>
-                        <option value="0- المصنع">0- المصنع</option>
-                        <option value="1- التخصصي">1- التخصصي</option>
-                        <option value="2- الإمام سعود">2- الإمام سعود</option>
-                        <option value="3- بريدة">3- بريدة</option>
-                        <option value="4- الخبر">4- الخبر</option>
-                        <option value="5- السيف جاليري">5- السيف جاليري</option>
-                        <option value="6- الدوادمي">6- الدوادمي</option>
-                        <option value="7- الرس">7- الرس</option>
-                        <option value="8- الأحساء">8- الأحساء</option>
-                        <option value="9- المجمعة">9- المجمعة</option>
-                        <option value="10- الدمام">10- الدمام</option>
-                        <option value="11- المدينة">11- المدينة</option>
-                        <option value="12- جدة">12- جدة</option>
+
+
+
+
+
+            <!-- <div class="  align-items-center "> -->
+            <!-- <div class="d-flex text-left align-items-center w-100"> -->
+            <!-- <select id="multiple-checkboxes" multiple="multiple"> -->
+            <!-- <select id="multiple-checkboxes" multiple="multiple">
+                                <option selected></option>
+                                <option value="" disabled class="text-bg-dark text-danger text-center">موضوع العقد</option>
+                                <option value="مطبخ">مطبخ</option>
+                        <option value="مطابخ">مطابخ</option>
+                        <option value="كاونتر">كاونتر</option>
+                        <option value="غرفة غسيل">غرفة غسيل</option>
+                        <option value="وحدة تلفزيون">وحدة تلفزيون</option>
+                        <option value="مستودع">مستودع</option>
+                        <option value="مغسلة">مغسلة</option>
+                        <option value="مغاسل">مغاسل</option>
+                        <option value="اكسسوارات">اكسسوارات</option>
+                        <option value="مجلى">مجلى</option>
+                        <option value="أجهزة">أجهزة</option>
+                        <option value="إضافة على عقد">إضافة على عقد</option>
+                        <option value="خزائن">خزائن</option>
                     </select>
-                    <label for="showroom">المعرض</label>
-                </div>
-                
-
-            </div>
-            <div class="container mainData-03 row m-2">
-                <div class="workDays col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="workDays" value="" placeholder="Ex: 90"
-                        autocomplete>
-                    <label for="workDays">مدة العقد </label>
-                </div>
-                <div class="conrtactType col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="conrtactType" value="" placeholder="Ex: مطبخ"
-                        autocomplete>
-                    <label for="conrtactType"> موضوع العقد </label>
-                </div>
-                <div class="mainContractNo col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="mainContractNo" value=""
-                        placeholder="Ex: " >
-                    <label for="mainContractNo">رقم العقد الأساسي ( ان وجد ) </label>
-                </div>
-            </div>
-            <div class="container mainData-03 row m-2">
-                <div class="totalNoTax col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="totalNoTax" value="" onkeyup="taxing();"
-                        placeholder="Ex: " >
-                    <label for="totalNoTax">قيمة العقد (قبل الضريبة) </label>
-                </div>
-                <div class="tax col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="tax" value="" placeholder="Ex: 90"
-                        disabled>
-                    <label for="tax">الضريبة</label>
-                </div>
-                <div class="totalTaxed col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="totalTaxed" value="" placeholder="Ex: "
-                        disabled>
-                    <label for="totalTaxed"> القيمة شاملة الضريبة </label>
-                </div>
-            </div>
+                    <label for="conrtactType" class="form-label select-label">موضوع العقد</label> -->
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="mainContractNo col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control " id="mainContractNo" value="" placeholder="Ex: ">
+            <label for="mainContractNo">رقم العقد الأساسي ( ان وجد ) </label>
+          </div>
+        </div>
+      <!-- //Row 4   -->
+        <div class="container row4 row m-2">
+          <div class="totalNoTax section col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control " id="totalNoTax" value="" onkeyup="taxing();" placeholder="Ex: ">
+            <label for="totalNoTax">قيمة العقد (قبل الضريبة) </label>
+          </div>
+          <div class="totalDevNoTax devicesData hide col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control " id="totalDevNoTax" value="" onkeyup="taxing();" placeholder="Ex: " disabled>
+            <label for="totalDevNoTax">قيمة الأجهزة (قبل الضريبة) </label>
+          </div>
+          <div class="tax col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control " id="tax" value="" placeholder="Ex: 90" disabled>
+            <label for="tax">الضريبة</label>
+          </div>
+          <div class="totalTaxed col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="totalTaxed" value="" placeholder="Ex: " disabled>
+            <label for="totalTaxed"> القيمة شاملة الضريبة </label>
+          </div>
+        </div>
+      </div>
+      <!-- // Cabinet Data  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg cabinetsData  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <!-- // Row 1 -->
+        <div class="container cabinets row1 row m-2 ">
+          <div class="cabinetType col-md col-sm col form-floating placeholder:text-center">
+            <select class="form-select" id="cabinetType" aria-label="Floating label select example">
+              <option selected></option>
+              <option value="خشب تشيب بورد">خشب تشيب بورد</option>
+              <option value="خشب OSB">خشب OSB</option>
+              <option value="خشب بليوود">خشب بليوود</option>
+              <option value="ألمنيوم كلادينج ضد الكسر">ألمنيوم كلادينج ضد الكسر</option>
+            </select>
+            <label for="cabinetType"> >نوع الكابينة</label>
+          </div>
+          <div class="handelCode col-md col-sm col form-floating  placeholder:text-center">
+            <input type="text" class="form-control float-right" id="handelCode" value="" placeholder="Ex: "
+              autocomplete>
+            <label for="handelCode">نوع / كود المسكة</label>
+          </div>
+          <div class="handelCount col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="handelCount" value="" placeholder="Ex: 20" autocomplete>
+            <label for="handelCount">عدد المسكات </label>
+          </div>
+        </div>
+        <!-- //Row 2 -->
+        <div class="container cabinets row2 row m-2">
+          <div class="doorType col-md col-sm col form-floating placeholder:text-center">
+            <select class="form-select" id="doorType" aria-label="Floating label select example">
+              <option selected></option>
+              <option value="" disabled class="text-bg-dark text-danger text-center">ألومنيوم</option>
+              <option value="ألمنيوم شرائح خشابي">ألمنيوم شرائح خشابي</option>
+              <option value="ألمنيوم شرائح سادة">ألمنيوم شرائح سادة</option>
+              <option value="ألمنيوم صاج خشابي">ألمنيوم صاج خشابي</option>
+              <option value="ألمنيوم صاج سادة">ألمنيوم صاج سادة</option>
+              <option value="" disabled class="text-bg-dark text-danger text-center">خشابي</option>
+              <option value="خشب 3 ملي">خشب 3 ملي</option>
+              <option value="خشب معالج مطلي">خشب معالج مطلي</option>
+              <option value="خشب ملبس طبيعي">خشب ملبس طبيعي</option>
+              <option value="خشب ميلامين">خشب ميلامين</option>
+              <option value="خشب يوڤي">خشب يوڤي</option>
+              <option value="خشب ٣ مم">خشب ٣ مم</option>
+              <option value="" disabled class="text-bg-dark text-center text-danger">أخري</option>
+              <option value="آكليريك">آكليريك</option>
+              <option value="يوڤي بانيل">يوڤي بانيل</option>
+            </select>
+            <label for="doorType">نوع الدرفة </label>
+          </div>
+          <div class="doorCode col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="doorCode" value="" placeholder="Ex: " autocomplete>
+            <label for="doorCode">موديل الدرفة</label>
+          </div>
+          <div class="door-color col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="door-color" value="" placeholder="Ex: " autocomplete>
+            <label for="door-color">كود لون الدرفة</label>
+          </div>
+        </div>
+        <!-- //Row3 -->
+        <div class="container cabinets row3 row m-2">
+          <div class="cabinetAdd col-md col-sm col form-floating placeholder:text-center">
+            <textarea class="form-control " id="cabinetAdd" value="" placeholder="Ex: 90" autocomplete></textarea>
+            <label for="cabinetAdd">معلومات اضافية عن الكابينة والدرفة </label>
+          </div>
+        </div>
+      </div>
+      <!-- // Doors Data  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg doorsData row1  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <div class="container mainData-01 row m-2 ">
+          <div class="shelf01 col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="shelf01" value="" placeholder="Ex:    " autocomplete>
+            <label for="shelf01">أرفف إضافية </label>
+          </div>
+          <div class="nala col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="nala" value="" placeholder="Ex: " autocomplete>
+            <label for="nala">نعلة رخام / خشب </label>
+          </div>
+          <div class="nalaPaint col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="nalaPaint" value="" placeholder="Ex: " autocomplete>
+            <label for="nalaPaint">طلاء النعلة </label>
+          </div>
+        </div>
+        <div class="container cabinet-03 row m-2">
+          <div class="doorAddName  col-3 form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="doorAddName" value="" placeholder="Ex: " autocomplete>
+            <label for="doorAddName"> اضافة اخري </label>
+          </div>
+          <div class="doorAddValue col-md  col-sm-6 form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="doorAddValue" value="" placeholder="Ex: " autocomplete>
+            <label for="doorAddValue"> البيان </label>
+          </div>
+        </div>
+      </div>
+      <!-- // Glass Data   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg glassData  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <div class="container mainData-01 row m-2 ">
+          <div class="georgianBar col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="georgianBar" value="" placeholder="Ex:" autocomplete>
+            <label for="georgianBar">جورجيان بار </label>
+          </div>
+          <div class="glass col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="glass" value="" placeholder="Ex: " autocomplete>
+            <label for="glass"> درف زجاج / أكريلك </label>
+          </div>
+          <div class="doorOpen col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="doorOpen" value="" placeholder="Ex: " autocomplete>
+            <label for="doorOpen"> فتح الدرفة </label>
+          </div>
+        </div>
+        <div class="container cabinet-03 row m-2">
+          <div class="glassAddonName  col-3 form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="glassAddonName" value="" placeholder="Ex: " autocomplete>
+            <label for="glassAddonName"> اضافة اخري </label>
+          </div>
+          <div class="glassAddonValue col-md  col-sm-6 form-floating placeholder:text-center">
+            <input type="text" class="form-control " id="glassAddonValue" value="" placeholder="Ex: " autocomplete>
+            <label for="glassAddonValue"> البيان </label>
+          </div>
+        </div>
+      </div>
+      <!-- // Surface   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg SurfaceData  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <div class="container mainData-01 row m-2 ">
+          <div class="surfaceType col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="surfaceType" value="" placeholder="Ex: " autocomplete>
+            <label for="surfaceType">نوع السطح </label>
+          </div>
+          <div class="surfaceCode col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="surfaceCode" value="" placeholder="Ex: " autocomplete>
+            <label for="surfaceCode"> كود السطح </label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="sinkType col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="sinkType" value="" placeholder="Ex: " autocomplete>
+            <label for="sinkType"> نوع المجلي </label>
+          </div>
+          <div class="sinkCode col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="sinkCode" value="" placeholder="Ex: " autocomplete>
+            <label for="sinkCode"> كود المجلي </label>
+          </div>
+        </div>
+        <div class="container cabinet-03 row m-2">
+          <div class="surfaceExtra col-md col-sm col form-floating placeholder:text-center">
+            <textarea class="form-control " id="surfaceExtra" value="" placeholder="Ex: " autocomplete></textarea>
+            <label for="surfaceExtra">معلومات اضافية عن السطح </label>
+          </div>
+        </div>
+      </div>
+      <!-- // Accessroies    = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg AccessroiesData  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <div class="container mainData-01 row m-2 ">
+          <div class="wallCover col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="wallCover" value="" placeholder="Ex: " autocomplete>
+            <label for="wallCover"> تكسيات جدارية </label>
+          </div>
+          <div class="upperCor col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="upperCor" value="" placeholder="Ex: " autocomplete>
+            <label for="upperCor"> كورنيش علوي </label>
+          </div>
+          <div class="lowerCor col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="lowerCor" value="" placeholder="Ex: " autocomplete>
+            <label for="lowerCor"> كورنيش سفلي </label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="shelfHanged col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="shelfHanged" value="" placeholder="Ex:" autocomplete>
+            <label for="shelfHanged"> أرفف معلقة </label>
+          </div>
+          <div class="light col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="light" value="" placeholder="Ex: " autocomplete>
+            <label for="light"> إنارة </label>
+          </div>
+          <div class="cabinetOpen col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="cabinetOpen" value="" placeholder="Ex: " autocomplete>
+            <label for="cabinetOpen"> كبائن مفتوحة </label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="drawerSmall col-md col-sm col form-floating ">
+            <input type="number" class="form-control" id="drawerSmall" value="" placeholder="Ex: " autocomplete>
+            <label for="drawerSmall"> درج هيدروليك صغير </label>
+          </div>
+          <div class="drawerMed col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="drawerMed" value="" placeholder="Ex: " autocomplete>
+            <label for="drawerMed"> درج هيدروليك وسط </label>
+          </div>
+          <div class="drawerLar col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="drawerLar" value="" placeholder="Ex: " autocomplete>
+            <label for="drawerLar"> درج هيدروليك كبير </label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="generalAddName01 col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="generalAddName01" value="" placeholder="Ex: " autocomplete>
+            <label for="generalAddName01">إضافة أخري 1 </label>
+          </div>
+          <div class="generalAddName02 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="generalAddName02" value="" placeholder="Ex: " autocomplete>
+            <label for="generalAddName02"> إضافة أخري 2 </label>
+          </div>
+          <div class="generalAddName03 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="generalAddName03" value="" placeholder="Ex: test@test.test"
+              autocomplete>
+            <label for="generalAddName03"> إضافة أخري 3 </label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="generalAddValue01 col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="generalAddValue01" value="" placeholder="Ex: " autocomplete>
+            <label for="generalAddValue01">قيمة إضافة أخري 1 </label>
+          </div>
+          <div class="generalAddValue02 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="generalAddValue02" value="" placeholder="Ex: " autocomplete>
+            <label for="generalAddValue02"> قيمة إضافة أخري 2 </label>
+          </div>
+          <div class="generalAddValue03 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="generalAddValue03" value="" placeholder="Ex: test@test.test"
+              autocomplete>
+            <label for="generalAddValue03"> قيمة إضافة أخري 3 </label>
+          </div>
+        </div>
+      </div>
+      <!-- // General Add-on   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg GeneralAddonData  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <div class="container mainData-01 row m-2 ">
+          <div class="accName01 col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="accName01" value="" placeholder="Ex: " autocomplete>
+            <label for="accName01"> كود اكسسوار 1 </label>
+          </div>
+          <div class="accName02 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="accName02" value="" placeholder="Ex: " autocomplete>
+            <label for="accName02"> كود اكسسوار 2</label>
+          </div>
+          <div class="accName03 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="accName03" value="" placeholder="Ex: " autocomplete>
+            <label for="accName03"> كود اكسسوار 3</label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="accValue01 col-md col-sm col form-floating ">
+            <input type="number" class="form-control" id="accValue01" value="" placeholder="Ex:">
+            <label for="accValue01"> عدد اكسسوار 1</label>
+          </div>
+          <div class="accValue02 col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="accValue02" value="" placeholder="Ex: ">
+            <label for="accValue02"> عدد اكسسوار 2</label>
+          </div>
+          <div class="accValue03 col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="accValue03" value="" placeholder="Ex: ">
+            <label for="accValue03"> عدد اكسسوار 3</label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="accName04 col-md col-sm col form-floating ">
+            <input type="text" class="form-control" id="accName04" value="" placeholder="Ex: " autocomplete>
+            <label for="accName04"> كود اكسسوار 4 </label>
+          </div>
+          <div class="accName05 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="accName05" value="" placeholder="Ex: " autocomplete>
+            <label for="accName05"> كود اكسسوار 5</label>
+          </div>
+          <div class="accName06 col-md col-sm col form-floating placeholder:text-center">
+            <input type="text" class="form-control" id="accName06" value="" placeholder="Ex: " autocomplete>
+            <label for="accName06"> كود اكسسوار 6</label>
+          </div>
+        </div>
+        <div class="container mainData-01 row m-2 ">
+          <div class="accValue04 col-md col-sm col form-floating ">
+            <input type="number" class="form-control" id="accValue04" value="" placeholder="Ex:">
+            <label for="accValue04"> عدد اكسسوار 4</label>
+          </div>
+          <div class="accValue05 col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="accValue05" value="" placeholder="Ex: ">
+            <label for="accValue05"> عدد اكسسوار 5</label>
+          </div>
+          <div class="accValue06 col-md col-sm col form-floating placeholder:text-center">
+            <input type="number" class="form-control" id="accValue06" value="" placeholder="Ex: ">
+            <label for="accValue06"> عدد اكسسوار 6</label>
+          </div>
         </div>
 
-        <div class="all-site container-lg cabinet  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container cabinet-01 row m-2 ">
-                <div class="cabinetType col-md col-sm col form-floating ">
-                    <input type="text" class="form-control float-right" id="cabinetType" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="cabinetType" class="float-right">نوع الكابينة </label>
-                </div>
-                <div class="handelCode col-md col-sm col form-floating  placeholder:text-center">
-                    <input type="text" class="form-control float-right" id="handelCode" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="handelCode">نوع / كود المسكة</label>
-                </div>
-                <div class="handelCount col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control" id="handelCount" value=""
-                        placeholder="Ex: 20" autocomplete >
-                    <label for="handelCount">عدد المسكات </label>
-                </div>
-            </div>
-            <div class="container cabinet-02 row m-2">
-                <div class="doorType col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="doorType" value="" placeholder="Ex: "
-                        autocomplete>
-                    <label for="doorType">نوع الدرفة </label>
-                </div>
-                <div class="doorCode col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="doorCode" value=""
-                        placeholder="Ex: " autocomplete>
-                    <label for="doorCode">موديل الدرفة</label>
-                </div>
-                <div class="door-color col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="door-color" value=""
-                        placeholder="Ex: " autocomplete>
-                    <label for="door-color">كود لون الدرفة</label>
-                </div>
-            </div>
-            <div class="container cabinet-03 row m-2">
-                <div class="cabinetAdd col-md col-sm col form-floating placeholder:text-center">
-                    <textarea class="form-control " id="cabinetAdd" value="" placeholder="Ex: 90"
-                        autocomplete></textarea>
-                    <label for="cabinetAdd">معلومات اضافية عن الكابينة والدرفة </label>
-                </div>
+
+
+      </div>
+      <!-- // Factory Extra   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="section container-lg factoryExtraData  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+        <div class="container cabinet-03 row m-2">
+          <div class="factoryInstructions col-md col-sm col form-floating placeholder:text-center">
+            <textarea class="form-control" id="factoryInstructions" value="" placeholder="Ex: " autocomplete></textarea>
+            <label for="factoryInstructions">معلومات أخري للمصنع </label>
+          </div>
+        </div>
+      </div>
+          <!-- // Devices  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <  -->
+      <div class="container-lg devicesData hide border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+            <div class="container devRow01 row m-2 ">
+              <div class="devType01 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType01" aria-label="Floating label select example"" onchange=" getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType01">نوع جهاز رقم 1</label>
               </div>
-        </div>
-
-         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container mainData-01 row m-2 ">
-                <div class="shelf01 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="shelf01" value=""
-                        placeholder="Ex:    " autocomplete >
-                    <label for="shelf01">أرفف إضافية </label>
-                </div>
-                <div class="nala col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="nala" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="nala">نعلة رخام / خشب </label>
-                </div>
-                <div class="nalaPaint col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="nalaPaint" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="nalaPaint">طلاء النعلة </label>
-                </div>
-            </div>
-              <div class="container cabinet-03 row m-2">
-                <div class="doorAddName  col-3 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="doorAddName" value="" placeholder="Ex: "
-                        autocomplete>
-                    <label for="doorAddName"> اضافة  اخري  </label>
-                </div>
-                <div class="doorAddValue col-md  col-sm-6 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="doorAddValue" value="" placeholder="Ex: "
-                        autocomplete>
-                    <label for="doorAddValue"> البيان </label>
+              <div class="devCode01 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode01" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode01"> كود جهاز رقم 1</label>
+              </div>
+              <div class="devPrice01 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control dev-price" id="devPrice01" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice01"> سعر جهاز رقم 1</label>
               </div>
             </div>
-        </div>
-
-         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container mainData-01 row m-2 ">
-                <div class="georgianBar col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="georgianBar" value=""
-                        placeholder="Ex:" autocomplete >
-                    <label for="georgianBar">جورجيان بار </label>
-                </div>
-                <div class="glass col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="glass" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="glass"> درف زجاج / أكريلك  </label>
-                </div>
-                <div class="doorOpen col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="doorOpen" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="doorOpen"> فتح الدرفة </label>
-                </div>
-            </div>
-              <div class="container cabinet-03 row m-2">
-                <div class="glassAddonName  col-3 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="glassAddonName" value="" placeholder="Ex: "
-                        autocomplete>
-                    <label for="glassAddonName"> اضافة  اخري  </label>
-                </div>
-                <div class="glassAddonValue col-md  col-sm-6 form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="glassAddonValue" value="" placeholder="Ex: "
-                        autocomplete>
-                    <label for="glassAddonValue"> البيان </label>
+            <div class="container devRow02 row m-2 ">
+              <div class="devType02 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType02" aria-label="Floating label select example" onchange="getPrice();" onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType02">نوع جهاز رقم 2</label>
+              </div>
+              <div class="devCode02 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode02" value="" placeholder="Ex: " autocomplete onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode02"> كود جهاز رقم 2</label>
+              </div>
+              <div class="devPrice02 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control  dev-price" id="devPrice02" value="" placeholder="Ex: " onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devPrice02"> سعر جهاز رقم 2</label>
               </div>
             </div>
-        </div>
-
-        <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container mainData-01 row m-2 ">
-                <div class="surfaceType col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="surfaceType" value=""
-                    placeholder="Ex: " autocomplete >
-                    <label for="surfaceType">نوع السطح  </label>
-                </div>
-                <div class="surfaceCode col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="surfaceCode" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="surfaceCode">  كود السطح </label>
-                </div>
-                </div>
-                <div class="container mainData-01 row m-2 ">
-                <div class="sinkType col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="sinkType" value=""
-                    placeholder="Ex: " autocomplete >
-                    <label for="sinkType"> نوع المجلي  </label>
-                </div>
-                <div class="sinkCode col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="sinkCode" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="sinkCode">  كود المجلي </label>
-                </div>
-            </div>
-            <div class="container cabinet-03 row m-2">
-                <div class="surfaceExtra col-md col-sm col form-floating placeholder:text-center">
-                    <textarea class="form-control " id="surfaceExtra" value="" placeholder="Ex: "
-                        autocomplete></textarea>
-                    <label for="surfaceExtra">معلومات اضافية عن السطح   </label>
-                </div>
-            </div>
-            </div>
-
-        <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container mainData-01 row m-2 ">
-                <div class="wallCover col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="wallCover" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="wallCover"> تكسيات جدارية </label>
-                </div>
-                <div class="upperCor col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="upperCor" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="upperCor"> كورنيش علوي </label>
-                </div>
-                <div class="lowerCor col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="lowerCor" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="lowerCor"> كورنيش سفلي </label>
-                </div>
-            </div>
-            <div class="container mainData-01 row m-2 ">
-                <div class="shelfHanged col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="shelfHanged" value=""
-                        placeholder="Ex:" autocomplete >
-                    <label for="shelfHanged"> أرفف معلقة </label>
-                </div>
-                <div class="light col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="light" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="light"> إنارة </label>
-                </div>
-                <div class="cabinetOpen col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="cabinetOpen" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="cabinetOpen"> كبائن مفتوحة </label>
-                </div>
-            </div>
-            <div class="container mainData-01 row m-2 ">
-                <div class="drawerSmall col-md col-sm col form-floating ">
-                    <input type="number" class="form-control" id="drawerSmall" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="drawerSmall"> درج هيدروليك صغير </label>
-                </div>
-                <div class="drawerMed col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control" id="drawerMed" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="drawerMed">  درج هيدروليك وسط </label>
-                </div>
-                <div class="drawerLar col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control" id="drawerLar" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="drawerLar"> درج هيدروليك كبير </label>
-                </div>
-            </div>
-            <div class="container mainData-01 row m-2 ">
-                <div class="generalAddName01 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="generalAddName01" value=""
-                        placeholder="Ex: " autocomplete >
-                        <label for="generalAddName01">إضافة أخري 1   </label>
-                    </div>
-                    <div class="generalAddName02 col-md col-sm col form-floating placeholder:text-center">
-                        <input type="text" class="form-control" id="generalAddName02" value=""
-                        placeholder="Ex: " autocomplete >
-                        <label for="generalAddName02">  إضافة أخري 2  </label>
-                    </div>
-                    <div class="generalAddName03 col-md col-sm col form-floating placeholder:text-center">
-                        <input type="text" class="form-control" id="generalAddName03" value=""
-                        placeholder="Ex: test@test.test" autocomplete >
-                        <label for="generalAddName03"> إضافة أخري 3   </label>
-                    </div>
-                </div>
-                    <div class="container mainData-01 row m-2 ">
-                        <div class="generalAddValue01 col-md col-sm col form-floating ">
-                            <input type="text" class="form-control" id="generalAddValue01" value=""
-                            placeholder="Ex: " autocomplete >
-                        <label for="generalAddValue01">قيمة إضافة أخري 1   </label>
-                    </div>
-                    <div class="generalAddValue02 col-md col-sm col form-floating placeholder:text-center">
-                        <input type="text" class="form-control" id="generalAddValue02" value=""
-                        placeholder="Ex: " autocomplete >
-                        <label for="generalAddValue02"> قيمة إضافة أخري 2  </label>
-                    </div>
-                    <div class="generalAddValue03 col-md col-sm col form-floating placeholder:text-center">
-                        <input type="text" class="form-control" id="generalAddValue03" value=""
-                        placeholder="Ex: test@test.test" autocomplete >
-                        <label for="generalAddValue03"> قيمة إضافة أخري 3   </label>
-                    </div>
-            </div>
-        </div>
-        <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container mainData-01 row m-2 ">
-                <div class="accName01 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="accName01" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accName01"> كود اكسسوار 1 </label>
-                </div>
-                <div class="accName02 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accName02" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accName02"> كود اكسسوار 2</label>
-                </div>
-                <div class="accName03 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accName03" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accName03"> كود اكسسوار 3</label>
-                </div>
-            </div>
-            <div class="container mainData-01 row m-2 ">
-                <div class="accValue01 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="accValue01" value=""
-                        placeholder="Ex:" autocomplete >
-                    <label for="accValue01"> عدد اكسسوار 1</label>
-                </div>
-                <div class="accValue02 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accValue02" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accValue02"> عدد اكسسوار 2</label>
-                </div>
-                <div class="accValue03 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accValue03" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accValue03"> عدد اكسسوار 3</label>
-                </div>
-            </div>
-            <div class="container mainData-01 row m-2 ">
-                <div class="accName04 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="accName04" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accName04"> كود اكسسوار 4 </label>
-                </div>
-                <div class="accName05 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accName05" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accName05"> كود اكسسوار 5</label>
-                </div>
-                <div class="accName06 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accName06" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accName06"> كود اكسسوار 6</label>
-                </div>
-            </div>
-            <div class="container mainData-01 row m-2 ">
-                <div class="accValue04 col-md col-sm col form-floating ">
-                    <input type="text" class="form-control" id="accValue04" value=""
-                        placeholder="Ex:" autocomplete >
-                    <label for="accValue04"> عدد اكسسوار 4</label>
-                </div>
-                <div class="accValue05 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accValue05" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accValue05"> عدد اكسسوار 5</label>
-                </div>
-                <div class="accValue06 col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control" id="accValue06" value=""
-                        placeholder="Ex: " autocomplete >
-                    <label for="accValue06"> عدد اكسسوار 6</label>
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
-            <div class="container cabinet-03 row m-2">
-                <div class="factoryInstructions col-md col-sm col form-floating placeholder:text-center">
-                    <textarea class="form-control" id="factoryInstructions" value="" placeholder="Ex: "
-                    autocomplete></textarea>
-                    <label for="factoryInstructions">معلومات أخري للمصنع </label>
-                </div>
+            <div class="container devRow03 row m-2 ">
+              <div class="devType03 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType03" aria-label="Floating label select example"" onchange=" getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType03">نوع جهاز رقم 3</label>
               </div>
-        </div>
-
-        <div class="row ">
-        <!-- <a href="#"> -->
-            <div  class="sendToMonday p-2 text-danger btn-succsess align-center text-center border-0 hover:text-bg-danger " onclick="start();">ارسال الي مونداي</div>
-        </div>
-    <!-- </a> -->
-        </div>
-      <!-- </form> -->
+              <div class="devCode03 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode03" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode03"> كود جهاز رقم 3</label>
+              </div>
+              <div class="devPrice03 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control  dev-price" id="devPrice03" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice03"> سعر جهاز رقم 3</label>
+              </div>
+            </div>
+            <div class="container devRow04 row m-2 ">
+              <div class="devType04 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType04" aria-label="Floating label select example" onchange="getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType04">نوع جهاز رقم 4</label>
+              </div>
+              <div class="devCode04 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode04" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode04"> كود جهاز رقم 4</label>
+              </div>
+              <div class="devPrice04 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control dev-price" id="devPrice04" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice04"> سعر جهاز رقم 4</label>
+              </div>
+            </div>
+            <div class="container devRow05 row m-2 ">
+              <div class="devType05 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType05" aria-label="Floating label select example" onchange="getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType05">نوع جهاز رقم 5</label>
+              </div>
+              <div class="devCode05 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode05" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode05"> كود جهاز رقم 5</label>
+              </div>
+              <div class="devPrice05 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control dev-price" id="devPrice05" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice05"> سعر جهاز رقم 5</label>
+              </div>
+            </div>
+            <div class="container devRow06 row m-2 ">
+              <div class="devType06 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType06" aria-label="Floating label select example" onchange="getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType06">نوع جهاز رقم 6</label>
+              </div>
+              <div class="devCode06 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode06" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode06"> كود جهاز رقم 6</label>
+              </div>
+              <div class="devPrice06 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control dev-price" id="devPrice06" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice06"> سعر جهاز رقم 6</label>
+              </div>
+            </div>
+            <div class="container devRow07 row m-2 ">
+              <div class="devType07 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType07" aria-label="Floating label select example" onchange="getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType07">نوع جهاز رقم 7</label>
+              </div>
+              <div class="devCode07 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode07" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode07"> كود جهاز رقم 7</label>
+              </div>
+              <div class="devPrice07 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control dev-price" id="devPrice07" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice07"> سعر جهاز رقم 7</label>
+              </div>
+            </div>
+            <div class="container devRow08 row m-2 ">
+              <div class="devType08 col-md col-sm col form-floating placeholder:text-center">
+                <select class="form-select" id="devType08" aria-label="Floating label select example" onchange="getPrice();"
+                  onkeyup="getPrice();">
+                  <option selected disabled>يرجي اختيار الجهاز</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أفران</option>
+                  <option value="فرن ٦٠ سم">فرن ٦٠ سم</option>
+                  <option value="فرن ٩٠ سم">فرن ٩٠ سم</option>
+                  <option value="فرن فري ستاند">فرن فري ستاند</option>
+                  <option value="مايكرويف">مايكرويف</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">أسطح</option>
+                  <option value="سطح سيراميك ٣٠ سم">سطح سيراميك ٣٠ سم</option>
+                  <option value="سطح سيراميك ٦٠ سم">سطح سيراميك ٦٠ سم</option>
+                  <option value="سطح سيراميك ٩٠ سم">سطح سيراميك ٩٠ سم</option>
+                  <option value="سطح حجر ٣٠ سم">سطح حجر ٣٠ سم</option>
+                  <option value="سطح حجر ٦٠ سم">سطح حجر ٦٠ سم</option>
+                  <option value="سطح حجر ٩٠ سم">سطح حجر ٩٠ سم</option>
+                  <option value="سطح غاز ٣٠ سم">سطح غاز ٣٠ سم</option>
+                  <option value="سطح غاز  ٦٠ سم">سطح غاز ٦٠ سم</option>
+                  <option value="سطح غاز ٩٠ سم">سطح غاز ٩٠ سم</option>
+                  <option value="سطح ٩٠ سم منوع">سطح ٩٠ سم منوع</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">ثلاجة و غسالة</option>
+                  <option value="طقم ثلاجة">طقم ثلاجة</option>
+                  <option value="ثلاجة سفلية">ثلاجة سفلية</option>
+                  <option value="غسالة صحون بلت إن">غسالة صحون بلت إن</option>
+                  <option value="غسالة صحون فريستاند">غسالة صحون فريستاند</option>
+                  <option value="" disabled class="text-bg-dark text-danger text-center">شفاطات</option>
+                  <option value="شفاط ٦٠ سم">شفاط ٦٠ سم</option>
+                  <option value="شفاط ٩٠ سم">شفاط ٩٠ سم</option>
+                  <option value="شفاط كاسيت">شفاط كاسيت</option>
+                </select>
+                <label for="devType08">نوع جهاز رقم 8</label>
+              </div>
+              <div class="devCode08 col-md col-sm col form-floating placeholder:text-center">
+                <input type="text" class="form-control" id="devCode08" value="" placeholder="Ex: " autocomplete
+                  onchange="getPrice();" onkeyup="getPrice();">
+                <label for="devCode08"> كود جهاز رقم 8</label>
+              </div>
+              <div class="devPrice08 col-md col-sm col form-floating placeholder:text-center">
+                <input type="number" class="form-control dev-price" id="devPrice08" value="" placeholder="Ex: " onchange="getPrice();"
+                  onkeyup="getPrice();">
+                <label for="devPrice81"> سعر جهاز رقم 8</label>
+              </div>
+            </div>
+            </div>
+      <!-- // Submit   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
+      <div class="row ">
+        <div class="sendToMonday p-2 text-danger btn-succsess align-center text-center border-0 hover:text-bg-danger "
+          onclick="start();">ارسال الي مونداي</div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+    <script src="calc/multiselect-01/js/jquery.min.js"></script>
+    <script src="calc/multiselect-01/js/popper.js"></script>
+    <script src="calc/multiselect-01/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
-        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" -->
+    <!-- integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" -->
+    <!-- crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="calc/multiselect-01/js/bootstrap-multiselect.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/1.1.2/js/bootstrap-multiselect.min.js"  integrity="sha512-lxQ4VnKKW7foGFV6L9zlSe+6QppP9B2t+tMMaV4s4iqAv4iHIyXED7O+fke1VeLNaRdoVkVt8Hw/jmZ+XocsXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  -->
+    <script src="script.js"></script>
+  </body>
 
 </html>

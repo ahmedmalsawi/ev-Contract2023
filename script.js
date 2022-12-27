@@ -1,20 +1,52 @@
 /** @format */
- $(function () {
-		$(".dropdown-menu li a").click(function () {
-			$(".btn:first-child").text($(this).text());
-			$(".btn:first-child").val($(this).text());
-		});
- });
-function taxing() {
-	let tax = document.getElementById("tax");
-	let totalNoTax = document.getElementById("totalNoTax");
-	let totalTaxed = document.getElementById("totalTaxed");
+(function ($) {
+	"use strict";
 
+	$(document).ready(function () {
+		$("#multiple-checkboxes").multiselect({
+			includeSelectAllOption: true,
+		});
+	});
+})(jQuery);
+
+let devTotal = 0;
+function taxing() {
+  getPrice();
+  
+  // let netNoTax =;
+  // let netTax =;
+  // let netWithTax =netNoTax+netTax;
+  
+	
+	// totalDevNoTax.value = Math.round(devTotal * 0.15 * 100) / 100 ;
+	
+	let totalNoTax = document.getElementById("totalNoTax");
+	let tax = document.getElementById("tax");
+	let totalTaxed = document.getElementById("totalTaxed");
+  
 	// tax.value = totalNoTax.value*0.15;
 	// totalTaxed.value = totalNoTax.value * 1.15;
 	tax.value = Math.round(totalNoTax.value * 0.15 * 100) / 100;
 	totalTaxed.value = Math.round(totalNoTax.value * 1.15 * 100) / 100;
 }
+
+function getPrice() { 
+	let tax = document.getElementById("tax");
+	let totalTaxed = document.getElementById("totalTaxed");
+  var arr = document.querySelectorAll(".dev-price");
+  var total = 0;
+  for (var i = 0; i < arr.length; i++)
+  {
+    if(parseFloat(arr[i].value)){
+      total += parseFloat(arr[i].value);
+    }
+    total = Math.round(total * 100) / 100;
+    document.getElementById("totalDevNoTax").value = total;
+    	tax.value = Math.round(total * 0.15 * 100) / 100;
+			totalTaxed.value = Math.round(total * 1.15 * 100) / 100;
+  }
+
+};
 
 function start()
 {
@@ -78,10 +110,35 @@ function start()
   let accName06 = document.getElementById("accName06").value;
   let accValue06 = document.getElementById("accValue06").value;
   let mainContractNo = document.getElementById("mainContractNo").value;
-  
-  
+  let devType01 = document.getElementById("devType01").value;
+	let devType02 = document.getElementById("devType02").value;
+	let devType03 = document.getElementById("devType03").value;
+	let devType04 = document.getElementById("devType04").value;
+	let devType05 = document.getElementById("devType05").value;
+	let devType06 = document.getElementById("devType06").value;
+	let devType07 = document.getElementById("devType07").value;
+	let devType08 = document.getElementById("devType08").value;
+	let devCode01 = document.getElementById("devCode01").value;
+	let devCode02 = document.getElementById("devCode02").value;
+	let devCode03 = document.getElementById("devCode03").value;
+	let devCode04 = document.getElementById("devCode04").value;
+	let devCode05 = document.getElementById("devCode05").value;
+	let devCode06 = document.getElementById("devCode06").value;
+	let devCode07 = document.getElementById("devCode07").value;
+	let devCode08 = document.getElementById("devCode08").value;
+	let devPrice01 = document.getElementById("devPrice01").value;
+	let devPrice02 = document.getElementById("devPrice02").value;
+	let devPrice03 = document.getElementById("devPrice03").value;
+	let devPrice04 = document.getElementById("devPrice04").value;
+	let devPrice05 = document.getElementById("devPrice05").value;
+	let devPrice06 = document.getElementById("devPrice06").value;
+	let devPrice07 = document.getElementById("devPrice07").value;
+	let devPrice08 = document.getElementById("devPrice08").value;
+
+
+
+
     let query5 = "mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:3560555809, item_name:$myItemName, column_values:$columnVals) { id } }";
-		let st = "Stuck";
 		let monVars = {
 			myItemName: customerName,
 			columnVals: JSON.stringify({
@@ -148,6 +205,30 @@ function start()
 				text6: accName06,
 				text6: accValue06,
 				text6: mainContractNo,
+				status3: { label: devType01 },
+				text6: devCode01,
+				text6: devPrice01,
+				status3: { label: devType02 },
+				text6: devCode02,
+				text6: devPrice02,
+				status3: { label: devType03 },
+				text6: devCode03,
+				text6: devPrice03,
+				status3: { label: devType04 },
+				text6: devCode04,
+				text6: devPrice04,
+				status3: { label: devType05 },
+				text6: devCode05,
+				text6: devPrice05,
+				status3: { label: devType06 },
+				text6: devCode06,
+				text6: devPrice06,
+				status3: { label: devType07 },
+				text6: devCode07,
+				text6: devPrice07,
+				status3: { label: devType08 },
+				text6: devCode08,
+				text6: devPrice08,
 			}),
 		};
 		
@@ -170,3 +251,34 @@ function start()
 	
 };
 
+function show()
+{
+  // let devs = document.querySelectorAll("devicesData");
+  // let nonDevs = document.querySelectorAll("section");
+  // devs.classList.toggle("hide");
+  // nonDevs.classList.toggle("hide");
+
+
+  // devs.toggleClass("hide");
+  // nonDevs.toggleClass("hide");
+
+  var devs = document.querySelectorAll('.devicesData');
+  devs.forEach(function (devs)
+  {
+    if (devs.classList.contains('hide')){
+      devs.classList.remove('hide');
+    }else{
+      devs.classList.add('hide');
+    }
+});
+var nonDevs = document.querySelectorAll(".section");
+nonDevs.forEach(function (nonDevs) {
+	if (nonDevs.classList.contains("hide")) {
+		nonDevs.classList.remove("hide");
+	} else {
+		nonDevs.classList.add("hide");
+	}
+});
+
+
+}
