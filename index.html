@@ -67,12 +67,6 @@
                         placeholder="Ex: عصام سلامة" autocomplete >
                     <label for="salesman">المصمم</label>
                 </div>
-                <!-- <div class="showroom col-md col-sm col form-floating placeholder:text-center">
-                    <input type="text" class="form-control " id="showroom" value=""
-                    placeholder="Ex: 2- الامام سعود" autocomplete >
-                    <label for="showroom">المعرض</label>
-                </div> -->
-                
                 <div class="showroom col-md col-sm col form-floating placeholder:text-center">
                     <select class="form-select" id="showroom" aria-label="Floating label select example">
                         <option selected>يرجي اختيار المعرض</option>
@@ -106,13 +100,18 @@
                         autocomplete>
                     <label for="conrtactType"> موضوع العقد </label>
                 </div>
-                <div class="totalNoTax col-md col-sm col form-floating placeholder:text-center">
-                    <input type="number" class="form-control " id="totalNoTax" value="" onkeyup="taxing();"
-                        placeholder="Ex: 75350.54" autocomplete>
-                    <label for="totalNoTax">قيمة العقد (قبل الضريبة) </label>
+                <div class="mainContractNo col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="mainContractNo" value=""
+                        placeholder="Ex: " >
+                    <label for="mainContractNo">رقم العقد الأساسي ( ان وجد ) </label>
                 </div>
             </div>
             <div class="container mainData-03 row m-2">
+                <div class="totalNoTax col-md col-sm col form-floating placeholder:text-center">
+                    <input type="number" class="form-control " id="totalNoTax" value="" onkeyup="taxing();"
+                        placeholder="Ex: " >
+                    <label for="totalNoTax">قيمة العقد (قبل الضريبة) </label>
+                </div>
                 <div class="tax col-md col-sm col form-floating placeholder:text-center">
                     <input type="number" class="form-control " id="tax" value="" placeholder="Ex: 90"
                         disabled>
@@ -354,6 +353,79 @@
                         <label for="generalAddValue03"> قيمة إضافة أخري 3   </label>
                     </div>
             </div>
+        </div>
+        <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">
+            <div class="container mainData-01 row m-2 ">
+                <div class="accName01 col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="accName01" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accName01"> كود اكسسوار 1 </label>
+                </div>
+                <div class="accName02 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accName02" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accName02"> كود اكسسوار 2</label>
+                </div>
+                <div class="accName03 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accName03" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accName03"> كود اكسسوار 3</label>
+                </div>
+            </div>
+            <div class="container mainData-01 row m-2 ">
+                <div class="accValue01 col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="accValue01" value=""
+                        placeholder="Ex:" autocomplete >
+                    <label for="accValue01"> عدد اكسسوار 1</label>
+                </div>
+                <div class="accValue02 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accValue02" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accValue02"> عدد اكسسوار 2</label>
+                </div>
+                <div class="accValue03 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accValue03" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accValue03"> عدد اكسسوار 3</label>
+                </div>
+            </div>
+            <div class="container mainData-01 row m-2 ">
+                <div class="accName04 col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="accName04" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accName04"> كود اكسسوار 4 </label>
+                </div>
+                <div class="accName05 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accName05" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accName05"> كود اكسسوار 5</label>
+                </div>
+                <div class="accName06 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accName06" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accName06"> كود اكسسوار 6</label>
+                </div>
+            </div>
+            <div class="container mainData-01 row m-2 ">
+                <div class="accValue04 col-md col-sm col form-floating ">
+                    <input type="text" class="form-control" id="accValue04" value=""
+                        placeholder="Ex:" autocomplete >
+                    <label for="accValue04"> عدد اكسسوار 4</label>
+                </div>
+                <div class="accValue05 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accValue05" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accValue05"> عدد اكسسوار 5</label>
+                </div>
+                <div class="accValue06 col-md col-sm col form-floating placeholder:text-center">
+                    <input type="text" class="form-control" id="accValue06" value=""
+                        placeholder="Ex: " autocomplete >
+                    <label for="accValue06"> عدد اكسسوار 6</label>
+                </div>
+            </div>
+
+
+
         </div>
 
         <div class="all-site container-lg cabinetAddon  border-spacing-2 border border-danger border-start-0 rounded-end bg-danger bg-opacity-10 mt-2 mb-2">

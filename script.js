@@ -58,9 +58,26 @@ function start()
   let drawerSmall = document.getElementById("drawerSmall").value;
   let drawerMed = document.getElementById("drawerMed").value;
   let drawerLar = document.getElementById("drawerLar").value;
-  let factoryInstructions = document.getElementById(
-		"factoryInstructions"
-	).value;
+  let factoryInstructions = document.getElementById("factoryInstructions").value;
+  let generalAddName01 = document.getElementById("generalAddName01").value;
+  let generalAddValue01 = document.getElementById("generalAddValue01").value;
+  let generalAddName02 = document.getElementById("generalAddName02").value;
+  let generalAddValue02 = document.getElementById("generalAddValue02").value;
+  let generalAddName03 = document.getElementById("generalAddName03").value;
+  let generalAddValue03 = document.getElementById("generalAddValue03").value;
+  let accName01 = document.getElementById("accName01").value;
+  let accValue01 = document.getElementById("accValue01").value;
+  let accName02 = document.getElementById("accName02").value;
+  let accValue02 = document.getElementById("accValue02").value;
+  let accName03 = document.getElementById("accName03").value;
+  let accValue03 = document.getElementById("accValue03").value;
+  let accName04 = document.getElementById("accName04").value;
+  let accValue04 = document.getElementById("accValue04").value;
+  let accName05 = document.getElementById("accName05").value;
+  let accValue05 = document.getElementById("accValue05").value;
+  let accName06 = document.getElementById("accName06").value;
+  let accValue06 = document.getElementById("accValue06").value;
+  let mainContractNo = document.getElementById("mainContractNo").value;
   
   
     let query5 = "mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:3560555809, item_name:$myItemName, column_values:$columnVals) { id } }";
@@ -117,7 +134,20 @@ function start()
 				text6: generalAddValue02,
 				text6: generalAddName03,
 				text6: generalAddValue03,
-				text6: factoryInstructions
+				text6: factoryInstructions,
+				text6: accName01,
+				text6: accValue01,
+				text6: accName02,
+				text6: accValue02,
+				text6: accName03,
+				text6: accValue03,
+				text6: accName04,
+				text6: accValue04,
+				text6: accName05,
+				text6: accValue05,
+				text6: accName06,
+				text6: accValue06,
+				text6: mainContractNo,
 			}),
 		};
 		
