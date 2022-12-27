@@ -25,7 +25,7 @@
   <body>
 
     <div class="container-lg  ">
-      <div class="container header text-center w-50 pb-0 mb-0 m-0 rounded-5 mx-auto">
+      <div class="container header text-center w-50 pb-0 mb-0 m-0 rounded-5 mx-auto bg-body">
         <h3 class="fs-5 text-red-600">فنون حواء للمطابخ</h3>
         <p id="head" class="head fs-7 w-100 text-center font-bold"> عقد المواصفات الفنية</p>
               <div class="row ">
@@ -98,11 +98,11 @@
       <!-- // Row 3 -->
         <div class="container row3 row m-2">
           <div class="workDays col-md col-sm col form-floating placeholder:text-center">
-            <input type="number" class="form-control " id="workDays" value="" placeholder="Ex: 90" autocomplete>
+            <input type="number" class="form-control" step="15" min="15" id="workDays" value="" placeholder="Ex: 90" autocomplete >
             <label for="workDays">مدة العقد </label>
           </div>
-          <div class="conrtactType col multiple form-floating placeholder:text-center">
-            <div class="row ">
+          <div class="conrtactType col  multiple form-floating placeholder:text-center">
+            <div class="row bg-light m-1 rounded">
               <div class="col-md-8 col-lg-5 d-flex  align-items-center">
                 <div class="d-flex text-left align-items-center w-100">
                   <label for="conrtactType" class="form-label select-label">موضوع العقد</label>

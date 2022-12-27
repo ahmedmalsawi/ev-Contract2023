@@ -38,10 +38,12 @@ a {
 .title h3 {
   color: var(--primary8);
   /* color:red; */
+  font-size: 25px;
 }
 
 .head {
   color: var(--primary10);
+  font-size: 20px;
 }
 
 /* #contractNo{
