@@ -3,7 +3,7 @@
 	"use strict";
 
 	$(document).ready(function () {
-		$("#multiple-checkboxes").multiselect({
+		$(".multiple-checkboxes").multiselect({
 			includeSelectAllOption: true,
 		});
 	});

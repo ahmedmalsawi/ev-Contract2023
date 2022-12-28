@@ -106,7 +106,7 @@
               <div class="col-md-8 col-lg-5 d-flex  align-items-center">
                 <div class="d-flex text-left align-items-center w-100">
                   <label for="conrtactType" class="form-label select-label">موضوع العقد</label>
-                  <select id="multiple-checkboxes" multiple="multiple">
+                  <select id="multiple-checkboxes" multiple="multiple" class="multiple-checkboxes">
                     <option value="" disabled class="text-bg-dark text-danger text-center">موضوع
                       العقد</option>
                     <option value="مطبخ">مطبخ</option>
@@ -126,34 +126,6 @@
                 </div>
               </div>
             </div>
-
-
-
-
-
-            <!-- <div class="  align-items-center "> -->
-            <!-- <div class="d-flex text-left align-items-center w-100"> -->
-            <!-- <select id="multiple-checkboxes" multiple="multiple"> -->
-            <!-- <select id="multiple-checkboxes" multiple="multiple">
-                                <option selected></option>
-                                <option value="" disabled class="text-bg-dark text-danger text-center">موضوع العقد</option>
-                                <option value="مطبخ">مطبخ</option>
-                        <option value="مطابخ">مطابخ</option>
-                        <option value="كاونتر">كاونتر</option>
-                        <option value="غرفة غسيل">غرفة غسيل</option>
-                        <option value="وحدة تلفزيون">وحدة تلفزيون</option>
-                        <option value="مستودع">مستودع</option>
-                        <option value="مغسلة">مغسلة</option>
-                        <option value="مغاسل">مغاسل</option>
-                        <option value="اكسسوارات">اكسسوارات</option>
-                        <option value="مجلى">مجلى</option>
-                        <option value="أجهزة">أجهزة</option>
-                        <option value="إضافة على عقد">إضافة على عقد</option>
-                        <option value="خزائن">خزائن</option>
-                    </select>
-                    <label for="conrtactType" class="form-label select-label">موضوع العقد</label> -->
-            <!-- </div> -->
-            <!-- </div> -->
           </div>
           <div class="mainContractNo col-md col-sm col form-floating placeholder:text-center">
             <input type="number" class="form-control " id="mainContractNo" value="" placeholder="Ex: ">
@@ -181,7 +153,7 @@
         </div>
       </div>
       <!-- // Cabinet Data  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
-      <div class="section container-lg cabinetsData  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
+      <div class="section container-lg cabinetsData col border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 ">
         <!-- // Row 1 -->
         <div class="container cabinets row1 row m-2 ">
           <div class="cabinetType col-md col-sm col form-floating placeholder:text-center">
@@ -205,8 +177,35 @@
           </div>
         </div>
         <!-- //Row 2 -->
-        <div class="container cabinets row2 row m-2">
-          <div class="doorType col-md col-sm col form-floating placeholder:text-center">
+        <div class="container row3 row m-2">
+          <div class="doorType col  multiple form-floating placeholder:text-center">
+            <div class="row bg-light m-1 rounded">
+              <div class="col-md-8 col-lg-5 d-flex  align-items-center">
+                <div class="d-flex text-left align-items-center w-100">
+                  <label for="doorType" class="form-label select-label ">نوع الدرفة </label>
+                  <select id="multiple-checkboxes" multiple="multiple" class="multiple-checkboxes">
+                    <option value="" disabled class="text-bg-dark text-danger text-center">ألومنيوم</option>
+                    <option value="ألمنيوم شرائح خشابي">ألمنيوم شرائح خشابي</option>
+                    <option value="ألمنيوم شرائح سادة">ألمنيوم شرائح سادة</option>
+                    <option value="ألمنيوم صاج خشابي">ألمنيوم صاج خشابي</option>
+                    <option value="ألمنيوم صاج سادة">ألمنيوم صاج سادة</option>
+                    <option value="" disabled class="text-bg-dark text-danger text-center">خشابي</option>
+                    <option value="خشب 3 ملي">خشب 3 ملي</option>
+                    <option value="خشب معالج مطلي">خشب معالج مطلي</option>
+                    <option value="خشب ملبس طبيعي">خشب ملبس طبيعي</option>
+                    <option value="خشب ميلامين">خشب ميلامين</option>
+                    <option value="خشب يوڤي">خشب يوڤي</option>
+                    <option value="خشب ٣ مم">خشب ٣ مم</option>
+                    <option value="" disabled class="text-bg-dark text-center text-danger">أخري</option>
+                    <option value="آكليريك">آكليريك</option>
+                    <option value="يوڤي بانيل">يوڤي بانيل</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="doorType col-md col-sm col form-floating placeholder:text-center">
             <select class="form-select" id="doorType" aria-label="Floating label select example">
               <option selected></option>
               <option value="" disabled class="text-bg-dark text-danger text-center">ألومنيوم</option>
@@ -226,7 +225,7 @@
               <option value="يوڤي بانيل">يوڤي بانيل</option>
             </select>
             <label for="doorType">نوع الدرفة </label>
-          </div>
+          </div> -->
           <div class="doorCode col-md col-sm col form-floating placeholder:text-center">
             <input type="text" class="form-control " id="doorCode" value="" placeholder="Ex: " autocomplete>
             <label for="doorCode">موديل الدرفة</label>
