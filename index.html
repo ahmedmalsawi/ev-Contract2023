@@ -36,11 +36,12 @@
               </div>
       </div>
     </div>
-        <div class="   container mb-2 mt-0 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
+        <div class="   container mb-2 p-2 border-spacing-2 border border-danger  rounded bg-blue bg-dark bg-opacity-10">
       <!-- // General Data   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
-      <div class=" container-lg mainData col  border-spacing-2 border border-start-0 rounded-end bg-danger bg-gradient bg-opacity-25 border-dark">
+      <div class=" container-lg mainData mb-2 border-spacing-2 border border-start-0 rounded-end bg-danger bg-gradient bg-opacity-25 border-dark">
       <!-- <div class=" container-lg mainData col border-black border-spacing-2 border border-success border-start-0 rounded-end bg-success bg-opacity-10"> -->
       <!-- //Row 1   -->
+      <div class="container text-center fw-bold">البيانات الأساسية</div>
         <div class="container row1 row m-2 ">
           <div class="customerName col-md col-sm col form-floating ">
             <input type="text" class="form-control" id="customerName" value=""
@@ -106,22 +107,22 @@
               <div class="col-md-8 col-lg-5 d-flex  align-items-center">
                 <div class="d-flex text-left align-items-center w-100">
                   <label for="conrtactType" class="form-label select-label">موضوع العقد</label>
-                  <select id="conrtactType" multiple="multiple" class="multiple-checkboxes">
+                  <select id="conrtactType" multiple="multiple" class="multiple-checkboxes" >
                     <option value="" disabled class="text-bg-dark text-danger text-center">موضوع
                       العقد</option>
-                    <option value="مطبخ">مطبخ</option>
-                    <option value="مطابخ">مطابخ</option>
-                    <option value="كاونتر">كاونتر</option>
-                    <option value="غرفة غسيل">غرفة غسيل</option>
-                    <option value="وحدة تلفزيون">وحدة تلفزيون</option>
-                    <option value="مستودع">مستودع</option>
-                    <option value="مغسلة">مغسلة</option>
-                    <option value="مغاسل">مغاسل</option>
-                    <option value="اكسسوارات">اكسسوارات</option>
-                    <option value="مجلى">مجلى</option>
-                    <option value="أجهزة">أجهزة</option>
-                    <option value="إضافة على عقد">إضافة على عقد</option>
-                    <option value="خزائن">خزائن</option>
+                    <option class='contractDataOption' value="مطبخ">مطبخ</option>
+                    <option class='contractDataOption' value="مطابخ">مطابخ</option>
+                    <option class='contractDataOption' value="كاونتر">كاونتر</option>
+                    <option class='contractDataOption' value="غرفة غسيل">غرفة غسيل</option>
+                    <option class='contractDataOption' value="وحدة تلفزيون">وحدة تلفزيون</option>
+                    <option class='contractDataOption' value="مستودع">مستودع</option>
+                    <option class='contractDataOption' value="مغسلة">مغسلة</option>
+                    <option class='contractDataOption' value="مغاسل">مغاسل</option>
+                    <option class='contractDataOption' value="اكسسوارات">اكسسوارات</option>
+                    <option class='contractDataOption' value="مجلى">مجلى</option>
+                    <option class='contractDataOption' value="إضافة على عقد">إضافة على عقد</option>
+                    <option class='contractDataOption' value="خزائن" >خزائن</option>
+                    <option class='devicesDataOption' value="أجهزة" >أجهزة</option>
                   </select>
                 </div>
               </div>
@@ -153,7 +154,8 @@
         </div>
       </div>
       <!-- // Cabinet Data  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
-      <div class="section container-lg cabinetsData col border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 ">
+      <div class="section container-lg cabinetsData border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 ">
+            <div class="container text-center fw-bold">الكابينة و الدرفة</div>
         <!-- // Row 1 -->
         <div class="container cabinets row1 row m-2 ">
           <div class="cabinetType col-md col-sm col form-floating placeholder:text-center">
@@ -223,6 +225,7 @@
       </div>
       <!-- // Doors Data  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
       <div class="section container-lg doorsData row1  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
+        <div class="container text-center fw-bold"> اضافات للكابينة و الدرفة</div>
         <div class="container mainData-01 row m-2 ">
           <div class="shelf01 col-md col-sm col form-floating ">
             <input type="text" class="form-control" id="shelf01" value="" placeholder="Ex:    " autocomplete>
@@ -247,9 +250,9 @@
             <label for="doorAddValue"> البيان </label>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
       <!-- // Glass Data   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
-      <div class="section container-lg glassData  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
+      <!-- <div class="section container-lg glassData  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2"> -->
         <div class="container mainData-01 row m-2 ">
           <div class="georgianBar col-md col-sm col form-floating ">
             <input type="text" class="form-control" id="georgianBar" value="" placeholder="Ex:" autocomplete>
@@ -293,6 +296,7 @@
       </div>
       <!-- // Surface   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
       <div class="section container-lg SurfaceData  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
+        <div class="container text-center fw-bold">السطح و المجلي</div>
         <div class="container mainData-01 row m-2 ">
           <div class="surfaceType col-md col-sm col form-floating ">
             <input type="text" class="form-control" id="surfaceType" value="" placeholder="Ex: " autocomplete>
@@ -333,6 +337,7 @@
       </div>
             <!-- // General Add-on   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
       <div class="section container-lg GeneralAddonData  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
+        <div class="container text-center fw-bold">اضافات جمالية أخري</div>
         <div class="container mainData-01 row m-2 ">
           <div class="wallCover col-md col-sm col form-floating ">
             <input type="text" class="form-control" id="wallCover" value="" placeholder="Ex: " autocomplete>
@@ -408,6 +413,7 @@
       </div>
             <!-- // Accessroies    = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
       <div class="section container-lg  AccessroiesData border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
+      <div class="container text-center fw-bold">الإكسسوارات</div>
         <div class="container Acc-Row-01 row m-2 ">
           <div class="accName01 col-md col-sm col form-floating placeholder:text-center">
             <select class="form-select" id="accName01" aria-label="Floating label select example">
@@ -626,7 +632,7 @@
       </div>
       <!-- // Factory Extra   = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < -->
       <div class="section container-lg factoryExtraData  border-spacing-2 border border-danger border-start-0 rounded-end bg-secondary bg-opacity-25 mt-2 mb-2">
-        <div class="container cabinet-03 row m-2">
+              <div class="container cabinet-03 row m-2">
           <div class="factoryInstructions col-md col-sm col form-floating placeholder:text-center">
             <textarea class="form-control" id="factoryInstructions" value="" placeholder="Ex: " autocomplete></textarea>
             <label for="factoryInstructions">معلومات أخري للمصنع </label>
@@ -635,6 +641,7 @@
       </div>
           <!-- // Devices  = < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <  -->
       <div class="container-lg devicesData hide border-spacing-2 border border-danger border-start-0 rounded-end bg-dark bg-opacity-25 mt-2 mb-2">
+      <div class="container text-center fw-bold">الأجهزة</div>
             <div class="container devRow01 row m-2 ">
               <div class="devType01 col-md col-sm col form-floating placeholder:text-center">
                 <select class="form-select" id="devType01" aria-label="Floating label select example"" onchange=" getPrice();"

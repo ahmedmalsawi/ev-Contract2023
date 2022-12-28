@@ -12,20 +12,10 @@
 let devTotal = 0;
 function taxing() {
   getPrice();
-  
-  // let netNoTax =;
-  // let netTax =;
-  // let netWithTax =netNoTax+netTax;
-  
-	
-	// totalDevNoTax.value = Math.round(devTotal * 0.15 * 100) / 100 ;
-	
 	let totalNoTax = document.getElementById("totalNoTax");
 	let tax = document.getElementById("tax");
 	let totalTaxed = document.getElementById("totalTaxed");
-  
-	// tax.value = totalNoTax.value*0.15;
-	// totalTaxed.value = totalNoTax.value * 1.15;
+	
 	tax.value = Math.round(totalNoTax.value * 0.15 * 100) / 100;
 	totalTaxed.value = Math.round(totalNoTax.value * 1.15 * 100) / 100;
 }
@@ -261,6 +251,8 @@ function show()
 
   // devs.toggleClass("hide");
   // nonDevs.toggleClass("hide");
+  // var conrtactType = document.getElementById("conrtactType").value;
+  // var contractDataOption = document.querySelectorAll(".devicesDataOption");
 
   var devs = document.querySelectorAll('.devicesData');
   devs.forEach(function (devs)
@@ -271,14 +263,25 @@ function show()
       devs.classList.add('hide');
     }
 });
+
 var nonDevs = document.querySelectorAll(".section");
 nonDevs.forEach(function (nonDevs) {
 	if (nonDevs.classList.contains("hide")) {
 		nonDevs.classList.remove("hide");
 	} else {
-		nonDevs.classList.add("hide");
+    nonDevs.classList.add("hide");
+		// conrtactType = 'أجهزة';
 	}
 });
+
+
+	// 	if (contractDataOption.classList.contains("hide")) {
+  //     // contractDataOption.classList.remove("hide");
+	// 	} else {
+	// 		contractDataOption.classList.add("hide");
+	// 	}
+	// });
+
 
 
 }
