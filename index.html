@@ -106,7 +106,7 @@
               <div class="col-md-8 col-lg-5 d-flex  align-items-center">
                 <div class="d-flex text-left align-items-center w-100">
                   <label for="conrtactType" class="form-label select-label">موضوع العقد</label>
-                  <select id="multiple-checkboxes" multiple="multiple" class="multiple-checkboxes">
+                  <select id="conrtactType" multiple="multiple" class="multiple-checkboxes">
                     <option value="" disabled class="text-bg-dark text-danger text-center">موضوع
                       العقد</option>
                     <option value="مطبخ">مطبخ</option>
@@ -183,7 +183,7 @@
               <div class="col-md-8 col-lg-5 d-flex  align-items-center">
                 <div class="d-flex text-left align-items-center w-100">
                   <label for="doorType" class="form-label select-label ">نوع الدرفة </label>
-                  <select id="multiple-checkboxes" multiple="multiple" class="multiple-checkboxes">
+                  <select id="doorType" multiple="multiple" class="multiple-checkboxes">
                     <option value="" disabled class="text-bg-dark text-danger text-center">ألومنيوم</option>
                     <option value="ألمنيوم شرائح خشابي">ألمنيوم شرائح خشابي</option>
                     <option value="ألمنيوم شرائح سادة">ألمنيوم شرائح سادة</option>
@@ -204,28 +204,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="doorType col-md col-sm col form-floating placeholder:text-center">
-            <select class="form-select" id="doorType" aria-label="Floating label select example">
-              <option selected></option>
-              <option value="" disabled class="text-bg-dark text-danger text-center">ألومنيوم</option>
-              <option value="ألمنيوم شرائح خشابي">ألمنيوم شرائح خشابي</option>
-              <option value="ألمنيوم شرائح سادة">ألمنيوم شرائح سادة</option>
-              <option value="ألمنيوم صاج خشابي">ألمنيوم صاج خشابي</option>
-              <option value="ألمنيوم صاج سادة">ألمنيوم صاج سادة</option>
-              <option value="" disabled class="text-bg-dark text-danger text-center">خشابي</option>
-              <option value="خشب 3 ملي">خشب 3 ملي</option>
-              <option value="خشب معالج مطلي">خشب معالج مطلي</option>
-              <option value="خشب ملبس طبيعي">خشب ملبس طبيعي</option>
-              <option value="خشب ميلامين">خشب ميلامين</option>
-              <option value="خشب يوڤي">خشب يوڤي</option>
-              <option value="خشب ٣ مم">خشب ٣ مم</option>
-              <option value="" disabled class="text-bg-dark text-center text-danger">أخري</option>
-              <option value="آكليريك">آكليريك</option>
-              <option value="يوڤي بانيل">يوڤي بانيل</option>
-            </select>
-            <label for="doorType">نوع الدرفة </label>
-          </div> -->
           <div class="doorCode col-md col-sm col form-floating placeholder:text-center">
             <input type="text" class="form-control " id="doorCode" value="" placeholder="Ex: " autocomplete>
             <label for="doorCode">موديل الدرفة</label>
@@ -281,6 +259,22 @@
             <input type="text" class="form-control" id="glass" value="" placeholder="Ex: " autocomplete>
             <label for="glass"> درف زجاج / أكريلك </label>
           </div>
+          <div class="doorOpen col  multiple form-floating placeholder:text-center">
+            <div class="row bg-light m-1 rounded">
+              <div class="col-md-8 col-lg-5 d-flex  align-items-center">
+                <div class="d-flex text-left align-items-center w-100">
+                  <label for="doorOpen" class="form-label select-label ">فتح الدرفة </label>
+                  <select id="doorOpen" multiple="multiple" class="multiple-checkboxes">
+                    <option value="زيادة ٢ سم">زيادة ٢ سم</option>
+                    <option value="فتح بالضغط">فتح بالضغط</option>
+                    <option value="ميول ٤٥ درجة">ميول ٤٥ درجة</option>
+                    <option value="مسكة عادية">مسكة عادية</option>
+                    <option value="مسكة مخفية">مسكة مخفية</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="doorOpen col-md col-sm col form-floating placeholder:text-center">
             <input type="text" class="form-control" id="doorOpen" value="" placeholder="Ex: " autocomplete>
             <label for="doorOpen"> فتح الدرفة </label>
@@ -310,10 +304,21 @@
           </div>
         </div>
         <div class="container mainData-01 row m-2 ">
-          <div class="sinkType col-md col-sm col form-floating placeholder:text-center">
-            <input type="text" class="form-control" id="sinkType" value="" placeholder="Ex: " autocomplete>
-            <label for="sinkType"> نوع المجلي </label>
+        <div class="sinkType col  multiple form-floating placeholder:text-center">
+          <div class="row bg-light m-1 rounded">
+            <div class="col-md-8 col-lg-5 d-flex  align-items-center">
+              <div class="d-flex text-left align-items-center w-100">
+                <label for="sinkType" class="form-label select-label ">نوع المجلى</label>
+                <select id="sinkType" multiple="multiple" class="multiple-checkboxes">
+                  <option value="رخام صناعي ستاندر">رخام صناعي ستاندر</option>
+                  <option value="رخام صناعي خاص">رخام صناعي خاص</option>
+                  <option value="ستينليس ستيل">ستينليس ستيل</option>
+                  <option value="ستينليس ستيل نانو">ستينليس ستيل نانو</option>
+                </select>
+              </div>
+            </div>
           </div>
+        </div>
           <div class="sinkCode col-md col-sm col form-floating placeholder:text-center">
             <input type="text" class="form-control" id="sinkCode" value="" placeholder="Ex: " autocomplete>
             <label for="sinkCode"> كود المجلي </label>
